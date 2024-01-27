@@ -1,0 +1,323 @@
+
+.balanceCard_box {
+    width: 100%;
+    border-radius: 1rem;
+    background: var(--color_white);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border_color);
+  
+    .page_title {
+      display: flex;
+      align-items: center;
+  
+      button.page_icon {
+        height: 2.8rem;
+       width: 2.8rem;
+        margin-left: 0.6rem;
+        padding: 0.4rem;
+        border-radius: 50%;
+        background-color: var(--color_lightprimary);
+        color: var(--color_primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        svg {
+            height: 1.8rem;
+            width: 1.8rem;
+            color: var(--color_primary);
+        }
+      }
+  
+      span {
+        font-size: 2rem;
+        color: var(--color_dark);
+  
+        @media screen and (max-width:991px) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  
+    .dropdown_btn {
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: 50%;
+      background-color: var(--color_lightprimary);
+      color: var(--color_primary);
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    button.btn_action_boost {
+      padding: 0.8rem 2rem;
+      width: 100%;
+      border-radius: 5rem;
+      font-size: 1.3rem;
+      background-color: var(--color_primary);
+      color: var(--color_white);
+      text-transform: capitalize;
+      margin-top: 0.6rem;
+  
+      svg {
+        height: 1.8rem;
+        width: 1.8rem;
+        margin-right: 1rem;
+      }
+    }
+  
+    h4.amount {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: var(--color_primary);
+  
+      @media screen and (max-width:991px) {
+        font-size: 2rem;
+      }
+    }
+  
+    .logo_mob {
+      max-height: 4rem;
+      max-height: 4rem;
+      height: 100%;
+      width: 100%;
+  
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  
+    @media screen and (max-width:767px) {
+      padding: 1rem;
+    }
+  }
+  
+  .user_menu_action {
+    max-width: 22rem;
+  
+    .MuiList-root {
+      padding: 0;
+  
+      .MuiButtonBase-root {
+        padding: 0.5rem;
+        margin-top: 0.5rem !important;
+      }
+    }
+  
+    @media screen and (max-width:991px) {
+      max-width: 100%;
+    }
+  }
+
+.mobile_menu{
+    width: 100%;
+    background-color: var(--color_white);
+    z-index: 50;
+    padding: 1.5rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.earning_item {
+  width: 100%;
+  background-color: var(--color_white);
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border: 1px solid var(--border_color);
+
+  .earning_content {
+    width: calc(100% - 6rem);
+    display: block;
+
+    p {
+      font-size: 1.3rem;
+      color: var(--color_dark);
+    }
+
+    h5 {
+      font-size: 2.2rem;
+      color: var(--color_primary);
+      font-weight: 600;
+      margin-top: 0.6rem;
+
+      @media screen and (max-width:767px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .earning_icon {
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+    background: var(--color_primary);
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(98, 89, 202, 0.3);
+    color: var(--color_white);
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    @media screen and (max-width:991px) {
+      height: 3.4rem;
+      width: 3.4rem;
+      padding: 0.6rem;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+    width: 100%;
+    padding: 1.4rem;
+  }
+}
+
+.owl_card_slider {
+  margin-top: 1.5rem;
+
+  .owl_getCard {
+    display: block;
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-controls {
+
+    .owl-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+
+      .owl-page {
+        margin-top: 1rem;
+        text-align: left;
+
+        span {
+          background-color: var(--color_dots) !important;
+          transition: 0.5s;
+          margin: 0.3rem !important;
+        }
+
+        &.active {
+          span {
+            background-color: var(--color_primary) !important;
+            width: 4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .owl-item {
+    min-height: 20rem !important;
+
+    .item {
+      min-height: 20rem !important;
+
+      .slider_card {
+        border-radius: 1rem;
+        padding: 1.5rem;
+        height: 100%;
+        min-height: 20rem !important;
+        text-align: center;
+        background-color: var(--color_white);
+        border: 1px solid var(--border_color);
+
+        h5 {
+          font-size: 1.6rem;
+          color: var(--color_primary);
+          font-weight: 500;
+        }
+
+        .card_symbol {
+          height: 4.5rem;
+          width: 4.5rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.2rem;
+          margin: 0 auto;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        p.symbol_name {
+          font-size: 2rem;
+          color: var(--color_dark);
+          margin-top: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+
+        .slider_card_svg {
+          text-align: right;
+          height: 10rem;
+          width: 10rem;
+          padding: 0.6rem;
+          margin: 0 auto;
+          opacity: 0.4;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+
+          svg,
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        button.refer_btn {
+          background-color: var(--color_primary);
+          color: var(--color_white);
+          padding: 0.8rem 2.2rem;
+          font-size: 1.2rem;
+          margin-top: 2rem;
+        }
+
+        .slider_card_content {
+          p {
+            font-size: 1.3rem;
+            color: var(--color_secondary);
+            margin-bottom: 0.5rem;
+          }
+
+          h6 {
+            font-size: 2.2rem;
+            color: var(--color_primary);
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+          }
+
+          span {
+            font-size: 1.2rem;
+            color: var(--color_secondary);
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

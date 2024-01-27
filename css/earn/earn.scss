@@ -1,0 +1,305 @@
+.earn_card {
+  height: 100%;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  position: relative;
+  background-color: var(--color_white);
+  border: 1px solid var(--border_color);
+
+  .earn_card_header {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+
+    .symbol_icon {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.6rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    span {
+      font-size: 1.6rem;
+      color: var(--color_dark);
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  .earn_card_body {
+    margin-top: 2rem;
+    // padding-bottom: 4rem;
+
+    .redeem_box {
+      display: block;
+      margin-bottom: 1.5rem;
+      background-color: var(--color_lightprimary);
+      border-radius: 0.8rem;
+      padding: 1.2rem;
+
+      .earn_day {
+        display: block;
+
+        p {
+          font-size: 1.4rem;
+          color: var(--color_primary);
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 1.1rem;
+          color: var(--color_secondary);
+          margin-bottom: 0;
+        }
+      }
+
+      .upto_day {
+        text-align: right;
+
+        span {
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: var(--color_secondary);
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 600;
+          color: var(--color_primary);
+          margin-bottom: 0;
+        }
+
+        svg {
+          height: 1.5rem;
+          color: var(--color_primary);
+        }
+      }
+    }
+  }
+}
+
+
+// ====== Earn inner
+.about_earn {
+  width: 100%;
+  border: 1px solid var(--color_grey);
+  border-radius: 0.6rem;
+  overflow: hidden;
+
+  .about_title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color_primary);
+    padding: 1.4rem 2rem;
+    border-bottom: 1px solid var(--color_grey);
+    background-color: var(--color_lightprimary);
+  }
+
+  .about_desc {
+    padding: 1.5rem 2rem;
+    font-size: 1.3rem;
+    color: var(--color_secondary);
+    background-color: var(--color_white);
+  }
+}
+
+.earn_validate {
+  background-color: var(--color_white);
+  border-radius: 0.6rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  height: 100%;
+
+  svg {
+    height: 5rem;
+    width: 5rem;
+    margin: 0 auto;
+    color: var(--color_primary);
+    border: 1px solid var(--color_grey);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--color_grey);
+
+    @media screen and (max-width:767px) {
+      height: 4rem;
+      width: 4rem;
+      padding: 0.8em;
+    }
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: var(--color_secondary);
+  }
+
+  @media screen and (max-width:767px) {
+    padding: 1rem 1rem;
+  }
+}
+
+// =============== Earn inner pages css
+.earn_box {
+  border: 1px solid var(--border_color);
+  padding: 2rem;
+  background-color: var(--color_white);
+  border-radius: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  height: 100%;
+
+  .earn_icon {
+    height: 8rem;
+    width: 8rem;
+    padding: 2.4rem;
+    margin: 1rem auto 2.5rem;
+    background-color: var(--color_lightprimary);
+    border-radius: 50%;
+
+    svg {
+      height: 100%;
+      width: 100%;
+      color: var(--color_primary);
+    }
+
+    @media screen and (max-width:767px) {
+      height: 6rem;
+      width: 6rem;
+      padding: 1.5rem;
+    }
+  }
+
+  h5.step {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--color_dark);
+
+    @media screen and (max-width:767px) {
+      font-size: 2rem;
+    }
+  }
+
+  h4.earn_title {
+    font-size: 2rem;
+    color: var(--color_primary);
+    font-weight: 600;
+    margin-top: 1rem;
+
+    @media screen and (max-width:767px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  p.earn_desc {
+    font-size: 1.4rem;
+    color: var(--color_secondary);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  @media screen and (max-width:767px) {
+    padding: 1.5rem;
+  }
+}
+
+.stake_list {
+  margin-top: 2rem;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 1.4rem;
+      color: var(--color_secondary);
+    }
+
+    span {
+      font-size: 1.5rem;
+      color: var(--color_dark);
+      position: relative;
+
+      div.tool {
+        font-size: 1.4rem;
+        background-color: var(--color_primary);
+        height: 1.8rem;
+        width: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color_white);
+        border-radius: 50%;
+        padding: 0.6rem;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.5rem;
+        z-index: 2;
+      }
+    }
+
+    input {
+      text-align: right;
+      max-width: 10rem;
+      padding: 0.6rem;
+      padding-right: 3rem !important;
+      outline: none;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border_color);
+    }
+
+    .form-check {
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+
+      input.form-check-input {
+        height: 2rem;
+        width: 2rem;
+        padding: 1rem !important;
+        margin-right: 1rem;
+        box-shadow: none;
+
+        &:checked {
+          background-color: var(--color_primary);
+          border-color: var(--color_primary);
+        }
+      }
+    }
+
+    .qa_icon {
+      height: 3.5rem;
+      width: 3.5rem;
+      background-color: var(--color_lightprimary);
+      border-radius: 50%;
+      padding: 0.6rem;
+      font-size: 2rem;
+      color: var(--color_primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    a.link_other {
+      font-size: 1.4rem;
+      color: var(--color_primary);
+      margin-left: 1rem;
+      text-decoration: underline;
+      width: calc(100% - 3.5rem);
+    }
+  }
+}

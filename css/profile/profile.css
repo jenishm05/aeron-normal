@@ -1,0 +1,242 @@
+.setting_card {
+  background-color: var(--color_white);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--color_grey);
+  margin-bottom: 2rem;
+}
+
+.setting_card .setting_header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color_grey);
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--color_primary);
+  background-color: var(--color_lightprimary);
+}
+
+.setting_card .setting_body {
+  padding: 1.5rem;
+}
+
+.setting_card .setting_body .chip {
+  background-color: var(--color_secondary);
+  border-radius: 3rem;
+  color: var(--color_white);
+  font-size: 1.2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  padding: 0.2rem 0.5rem;
+}
+
+.setting_card .setting_body .chip svg {
+  height: 2rem;
+}
+
+.setting_card .setting_body .setting_list {
+  padding: 0;
+  max-height: 100%;
+}
+
+.setting_card .setting_body .setting_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid var(--color_grey);
+  padding: 1rem !important;
+}
+
+.setting_card .setting_body .setting_list li:last-child {
+  border-bottom: none;
+}
+
+.setting_card .setting_body .setting_list li p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color_secondary);
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .setting_card .setting_body .setting_list li p {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.setting_card .setting_body .setting_list li h4 {
+  font-size: 1.4rem;
+  color: var(--color_primary);
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting_card .setting_body .setting_list li h4 a {
+  font-size: 1.4rem;
+  color: var(--color_lightprimary);
+  font-weight: 600;
+  text-decoration: underline;
+  display: block;
+  margin-left: 0.6rem;
+}
+
+.setting_card .setting_body .setting_list li .filter {
+  max-width: 16rem;
+}
+
+.setting_card .setting_body .setting_list li .filter .MuiSelect-select {
+  padding: 0.8rem 3rem 0.8rem 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 0.6rem;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid var(--color_grey);
+}
+
+@media screen and (max-width: 991px) {
+  .setting_card .setting_body .setting_list li .filter {
+    max-width: 100%;
+    margin-top: 0.6rem;
+  }
+}
+
+.setting_card .setting_body .setting_list li .datePicker {
+  max-width: 16rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 1rem;
+  border: 1px solid var(--color_grey);
+}
+
+.setting_card .setting_body .setting_list li .datePicker .MuiInputBase-root .MuiInputBase-input {
+  padding: 0.8rem 1rem;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .setting_card .setting_body .setting_list li .datePicker {
+    margin-bottom: 0.6rem;
+  }
+}
+
+.setting_card .setting_body .setting_list li .due_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .setting_card .setting_body .setting_list li {
+    display: block;
+    padding: 0.5rem 0;
+  }
+}
+
+.verify_step {
+  max-width: 14rem;
+}
+
+.verify_step .MuiStepConnector-vertical {
+  margin-left: 2.2rem;
+}
+
+.verify_step .MuiStepLabel-iconContainer svg {
+  font-size: 2.4rem;
+}
+
+.verify_step .MuiStepConnector-line {
+  background: var(--color_gradientprimary);
+  height: 8rem;
+  width: 3px;
+  border-radius: 1rem;
+}
+
+.verify_step .MuiStepLabel-label {
+  color: var(--color_secondary) !important;
+  font-size: 1.4rem;
+}
+
+.form_box {
+  margin: 1rem 0;
+}
+
+.form_box .with_action {
+  position: relative;
+}
+
+.form_box .with_action button.input_actions {
+  height: 4rem;
+  width: 4rem;
+  min-width: 3.4rem;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--color_primary);
+}
+
+.form_box .with_action button.input_actions svg {
+  font-size: 2rem;
+}
+
+.form_box .tag_line {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--color_secondary);
+}
+
+.alert {
+  margin-top: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.4rem 1.2rem !important;
+}
+
+.alert .MuiAlert-message {
+  font-size: 1.2rem;
+}
+
+.copy_address {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+/*# sourceMappingURL=profile.css.map */

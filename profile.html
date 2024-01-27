@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="./css/app/app.css">
+  </head>
+
+  <body>
+    <div class="d-flex align-items-start">
+      <div class="sidebar_menu">
+        <!-- Sidebar top section -->
+        <a href="./index.html" class="logo" id="logo">
+          <img src="./images/logo.png" alt="Logo" />
+        </a>
+
+        <!-- Sidebar grid content -->
+        <div class="grid-content">
+          <!-- Sidebar menu list -->
+          <ul class="menu">
+            <li class="menu_item">
+              <a href="./index.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 8.27V4.23C22 2.64 21.36 2 19.77 2H15.73C14.14 2 13.5 2.64 13.5 4.23V8.27C13.5 9.86 14.14 10.5 15.73 10.5H19.77C21.36 10.5 22 9.86 22 8.27Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path opacity="0.4" d="M15 15.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  <path opacity="0.4" d="M15 19.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="menu_item">
+              <a href="./wallet.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.04 13.55C17.62 13.96 17.38 14.55 17.44 15.18C17.53 16.26 18.52 17.05 19.6 17.05H21.5V18.24C21.5 20.31 19.81 22 17.74 22H6.26C4.19 22 2.5 20.31 2.5 18.24V11.51C2.5 9.44001 4.19 7.75 6.26 7.75H17.74C19.81 7.75 21.5 9.44001 21.5 11.51V12.95H19.48C18.92 12.95 18.41 13.17 18.04 13.55Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path opacity="0.4" d="M2.5 12.4098V7.83986C2.5 6.64986 3.23 5.58982 4.34 5.16982L12.28 2.16982C13.52 1.69982 14.85 2.61985 14.85 3.94985V7.74983" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M22.5608 13.9702V16.0302C22.5608 16.5802 22.1208 17.0302 21.5608 17.0502H19.6008C18.5208 17.0502 17.5308 16.2602 17.4408 15.1802C17.3808 14.5502 17.6208 13.9602 18.0408 13.5502C18.4108 13.1702 18.9208 12.9502 19.4808 12.9502H21.5608C22.1208 12.9702 22.5608 13.4202 22.5608 13.9702Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path opacity="0.4" d="M7 12H14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span>Wallet</span>
+              </a>
+            </li>
+
+            <li class="menu_item">
+              <a href="./earn.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2V19C2 20.66 3.34 22 5 22H22" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  <path opacity="0.4" d="M5 17L9.59 11.64C10.35 10.76 11.7 10.7 12.52 11.53L13.47 12.48C14.29 13.3 15.64 13.25 16.4 12.37L21 7" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span>Earn</span>
+              </a>
+            </li>
+
+            <li class="menu_item">
+              <a href="/transaction.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                    <path d="M3.58008 5.16016H17.4201C19.0801 5.16016 20.4201 6.50016 20.4201 8.16016V11.4802" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M6.74008 2L3.58008 5.15997L6.74008 8.32001" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  </g>
+                  <path d="M20.4201 18.84H6.58008C4.92008 18.84 3.58008 17.5 3.58008 15.84V12.52" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M17.2598 22.0002L20.4198 18.8402L17.2598 15.6802" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span>Transactions</span>
+              </a>
+            </li>
+
+            <li class="btn_mobile_plus">
+              <button id="toggleDrawerWithdraw" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12H18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M12 18V6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <!-- Sidebar bottom section -->
+          <ul class="menu bottom">
+            <li class="menu_item user">
+              <div class="user_account">
+                <img src="https://modernize-vuejs.adminmart.com/assets/user-1-6d05e3ce.jpg" class="user_img" />
+                <div class="user_name">
+                  <h5>John Smith</h5>
+                </div>
+                <a href="#" class="logout_btn" title="Log out">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <g opacity="0.4">
+                      <path d="M12 15.0001V3.62012" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mainlayout">
+        <div class="header d-flex align-items-center">
+          <div class="row align-content-center w-100">
+            <div class="col-4">
+              <a href="#" class="logo">
+                <img src="./images/logo.png" />
+              </a>
+
+              <button class="sidebar_collapse" id="sidebar_collapse">
+                <svg width="24" height="24" viewdiv="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="col-8">
+              <div class="header_menu">
+                <div class="dropdown notification">
+                  <button class="btn btn-secondary notify_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg width="24" height="24" viewdiv="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.4" d="M12 6.43994V9.76994" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                      <path d="M12.0199 2C8.3399 2 5.3599 4.98 5.3599 8.66V10.76C5.3599 11.44 5.0799 12.46 4.7299 13.04L3.4599 15.16C2.6799 16.47 3.2199 17.93 4.6599 18.41C9.4399 20 14.6099 20 19.3899 18.41C20.7399 17.96 21.3199 16.38 20.5899 15.16L19.3199 13.04C18.9699 12.46 18.6899 11.43 18.6899 10.76V8.66C18.6799 5 15.6799 2 12.0199 2Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                      <path opacity="0.4" d="M15.3299 18.8198C15.3299 20.6498 13.8299 22.1498 11.9999 22.1498C11.0899 22.1498 10.2499 21.7698 9.64992 21.1698C9.04992 20.5698 8.66992 19.7298 8.66992 18.8198" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" />
+                    </svg>
+                  </button>
+                  <div class="dropdown-menu">
+                    <h4>Notifications</h4>
+                    <ul>
+                      <li class="notify_list_item">
+                        <img alt="Jenish Mangukiya" src="https://modernize-vuejs.adminmart.com/assets/user-1-6d05e3ce.jpg" class="notify_avtar" />
+                        <span class="notify">Salma sent you new message Assign her new tasks</span>
+                        <button class="remove_notify">
+                          <svg focusable="false" aria-hidden="true" viewdiv="0 0 24 24" data-testid="CloseIcon">
+                            <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="dropdown user_menu">
+                  <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img alt="Jenish Mangukiya" src="https://modernize-vuejs.adminmart.com/assets/user-1-6d05e3ce.jpg" class="MuiAvatar-img css-1pqm26d-MuiAvatar-img" />
+                  </button>
+                  <div class="dropdown-menu">
+                    <button class="boost_menuClose">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewdiv="0 0 24 24" data-testid="CloseIcon">
+                        <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                      </svg>
+                    </button>
+                    <h5 class="userMenu_title">User Profile</h5>
+
+                    <div class="user_account">
+                      <img src="https://modernize-vuejs.adminmart.com/assets/user-1-6d05e3ce.jpg" class="user_img" />
+                      <div class="user_name">
+                        <h5>John Smith</h5>
+                        <p>johnsmith123@gmail.com</p>
+                      </div>
+                    </div>
+                    <ul>
+                      <li class="menu_link">
+                        <a href="#">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.16055 10.87C9.06055 10.86 8.94055 10.86 8.83055 10.87C6.45055 10.79 4.56055 8.84 4.56055 6.44C4.56055 3.99 6.54055 2 9.00055 2C11.4505 2 13.4405 3.99 13.4405 6.44C13.4305 8.84 11.5405 10.79 9.16055 10.87Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path opacity="0.4" d="M16.4093 4C18.3493 4 19.9093 5.57 19.9093 7.5C19.9093 9.39 18.4093 10.93 16.5393 11C16.4593 10.99 16.3693 10.99 16.2793 11" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M4.1607 14.56C1.7407 16.18 1.7407 18.82 4.1607 20.43C6.9107 22.27 11.4207 22.27 14.1707 20.43C16.5907 18.81 16.5907 16.17 14.1707 14.56C11.4307 12.73 6.9207 12.73 4.1607 14.56Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <path opacity="0.4" d="M18.3398 20C19.0598 19.85 19.7398 19.56 20.2998 19.13C21.8598 17.96 21.8598 16.03 20.2998 14.86C19.7498 14.44 19.0798 14.16 18.3698 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                          My Profile
+                        </a>
+                      </li>
+                      <li class="menu_link">
+                        <a href="#">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.46005 18.4898V15.5698C5.46005 14.5998 6.22005 13.7298 7.30005 13.7298C8.27005 13.7298 9.14005 14.4898 9.14005 15.5698V18.3798C9.14005 20.3298 7.52005 21.9498 5.57005 21.9498C3.62005 21.9498 2.00005 20.3198 2.00005 18.3798V12.2198C1.89005 6.5998 6.33005 2.0498 11.95 2.0498C17.57 2.0498 22 6.5998 22 12.1098V18.2698C22 20.2198 20.38 21.8398 18.43 21.8398C16.48 21.8398 14.86 20.2198 14.86 18.2698V15.4598C14.86 14.4898 15.62 13.6198 16.7 13.6198C17.67 13.6198 18.54 14.3798 18.54 15.4598V18.4898" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+                          Support
+                        </a>
+                      </li>
+                      <li class="menu_link">
+                        <a href="#">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.4405 8.8999C20.0405 9.2099 21.5105 11.0599 21.5105 15.1099V15.2399C21.5105 19.7099 19.7205 21.4999 15.2505 21.4999H8.74047C4.27047 21.4999 2.48047 19.7099 2.48047 15.2399V15.1099C2.48047 11.0899 3.93047 9.2399 7.47047 8.9099" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            <g opacity="0.4">
+                              <path d="M12 15.0001V3.62012" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M15.3504 5.85L12.0004 2.5L8.65039 5.85" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </g>
+                          </svg>
+                          Logout
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-3">
+
+          <div class="balanceCard_box">
+            <div class="row">
+              <div class="col-6">
+                <div class="page_title">
+                  <span>Account Value</span>
+                  <button class="page_icon">
+                    <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12 6.5c2.76 0 5 2.24 5 5 0 .51-.1 1-.24 1.46l3.06 3.06c1.39-1.23 2.49-2.77 3.18-4.53C21.27 7.11 17 4 12 4c-1.27 0-2.49.2-3.64.57l2.17 2.17c.47-.14.96-.24 1.47-.24zM2.71 3.16c-.39.39-.39 1.02 0 1.41l1.97 1.97C3.06 7.83 1.77 9.53 1 11.5 2.73 15.89 7 19 12 19c1.52 0 2.97-.3 4.31-.82l2.72 2.72c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L4.13 3.16c-.39-.39-1.03-.39-1.42 0zM12 16.5c-2.76 0-5-2.24-5-5 0-.77.18-1.5.49-2.14l1.57 1.57c-.03.18-.06.37-.06.57 0 1.66 1.34 3 3 3 .2 0 .38-.03.57-.07L14.14 16c-.65.32-1.37.5-2.14.5zm2.97-5.33c-.15-1.4-1.25-2.49-2.64-2.64l2.64 2.64z"></path>
+                    </svg>
+                  </button>
+                </div>
+                <h4 class="amount">$1200.00</h4>
+              </div>
+
+              <div class="col-6">
+                <div class="d-flex align-items-center justify-content-end">
+                  <button class="dropdown_btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6 12H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M12 18V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+                <!-- Your Menu content here -->
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-tabs tabs w-33 tab_drawer" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    Account
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    verification
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                    Security
+                  </button>
+                </li>
+
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active w-100" id="home-tab-pane">
+                  <div class='setting_card'>
+                    <div class='setting_header'>
+                      Account
+                    </div>
+                    <div class='setting_body'>
+                      <ul class='setting_list'>
+                        <li>
+                          <p>Name</p>
+                          <h4>John Smith</h4>
+                        </li>
+                        <li>
+                          <p>Email</p>
+                          <h4>johnsmth123@gmail.com</h4>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class='setting_card'>
+                    <div class='setting_header'>
+                      Settings
+                    </div>
+                    <div class='setting_body'>
+                      <ul class='setting_list'>
+                        <li>
+                          <p>Language</p>
+                          <select class="input_filed">
+                            <option value="English">English</option>
+                            <option value="Español">Español</option>
+                            <option value="Français">Français</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Polski">Polski</option>
+                            <option value="简体中文">简体中文</option>
+                          </select>
+                        </li>
+                        <li>
+                          <p>Currency</p>
+                          <select class="input_filed">
+
+                            <option value="AUD">AUD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CNY">CNY</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="HKD">HKD</option>
+                            <option value="JPY">JPY</option>
+                            <option value="PLN">PLN</option>
+                            <option value="USD">USD</option>
+                          </select>
+                        </li>
+                        <li>
+                          <p>Automatic Layout</p>
+                          <select class="input_filed">
+                            <option value="1">after 5 minutes </option>
+                            <option value="2">after 10 minutes</option>
+                            <option value="3">after 15 minutes</option>
+                            <option value="4">after 30 minutes</option>
+                            <option value="5">after 1 hour</option>
+                            <option value="6">after 8 hours</option>
+                            <option value="7">after 1 day</option>
+                          </select>
+                        </li>
+                        <li>
+                          <p>Max. Number of Withdrawals per day</p>
+                          <select class="input_filed">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                          </select>
+                        </li>
+                        <li>
+                          <p>Suspend Withdrawals</p>
+                          <input type="date" class="input_filed">
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class='setting_card'>
+                    <div class='setting_header'>johnsmith123@gmail.com</div>
+                    <div class='setting_body'>
+                      <ul class='setting_list'>
+                        <li>
+                          <div class='due_date'>
+                            <input type="date" class="input_filed">
+                            <p class="mb-0 mx-2">-</p>
+                            <input type="date" class="input_filed">
+                          </div>
+                          <div class="d-flex align-items-center justify-content-end">
+                            <select class="input_filed">
+                              <option value="csv">csv</option>
+                              <option value="pdf">PDF</option>
+                            </select>
+                            <button class='boost_btn primary' style='margin-left: 2rem;'>Download</button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- 2 -->
+                <div class="tab-pane fade w-100" id="profile-tab-pane">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="setting_card">
+                        <div class="setting_header">Identity Verification</div>
+                        <div class="setting_body">
+                          <div class="verify_step">
+                            <!-- Replace the following lines with the equivalent HTML for the stepper component -->
+                            <!-- Each step should have a label and StepIconComponent -->
+                            <!-- Active step should be set accordingly -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="setting_card">
+                        <div class="setting_header">Crypto Withdrawal Limits</div>
+                        <div class="setting_body">
+                          <ul class="setting_list">
+                            <li>
+                              <p>Daily</p>
+                              <h4>$1,000,000.00</h4>
+                            </li>
+                            <li>
+                              <p>Weekly</p>
+                              <h4>$5,000,000.00</h4>
+                            </li>
+                            <li>
+                              <p>Monthly</p>
+                              <h4>$4,000,000.00</h4>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="setting_card">
+                        <div class="setting_header">Important Note</div>
+                        <div class="setting_body">
+                          <ul class="setting_list">
+                            <li style="border-bottom: none !important;">
+                              <p>As a regulated company, we are required to verify certain information about our users. The personal data you provide will be processed solely by our partner</p>
+                            </li>
+                            <li>
+                              <h4>For more information, please visit our help center.
+                                <a href="/">Help Center</a>
+                              </h4>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade w-100" id="contact-tab-pane">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="setting_card">
+                        <div class="setting_header">Change Password</div>
+                        <div class="setting_body">
+                          <div class="form_box">
+                            <label class="label fs-25 fw-600 f-primary">Current password</label>
+                            <div class="with_action">
+                              <input type="password" placeholder="Enter Password" class="input_filed w-100" />
+                              <button class="input_actions" onclick="passwordShowHide()">
+                                <!-- Replace the following line with the equivalent HTML for the icons -->
+                                <!-- Use an icon for either visibility or visibility_off based on password visibility -->
+                              </button>
+                            </div>
+                            <p class="tag_line">Must be at least 8 characters</p>
+                          </div>
+
+                          <div class="form_box">
+                            <label class="label fs-25 fw-600 f-primary">New password</label>
+                            <div class="with_action">
+                              <input type="password" placeholder="Enter Password" class="input_filed w-100" />
+                              <button class="input_actions" onclick="conformpasswordShowHide()">
+                                <!-- Replace the following line with the equivalent HTML for the icons -->
+                                <!-- Use an icon for either visibility or visibility_off based on password visibility -->
+                              </button>
+                            </div>
+                            <p class="tag_line">Both passwords must match</p>
+                          </div>
+
+                          <button class="boost_btn primary">Submit</button>
+                          <div class="alert alert-warning d-flex align-items-center fs-5" role="alert">
+                            <!-- <div class="icon">
+                              <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ReportProblemOutlinedIcon">
+                                <path fill="currentColor" d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z"></path>
+                              </svg>
+                            </div> -->
+                            This will log you out from all other sessions
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="setting_card">
+                        <div class="setting_header">Change Email Address</div>
+                        <div class="setting_body">
+                          <div class="form_box">
+                            <label class="label fs-25 fw-600 f-primary">Enter new email</label>
+                            <input type="email" placeholder="Enter Email" class="input_filed w-100" />
+                          </div>
+                          <button class="boost_btn primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="setting_card">
+                        <div class="setting_header">Two Factor Authentication</div>
+                        <div class="setting_body">
+                          <div class="chip">
+                            <!-- Replace the following line with the equivalent HTML for the icon -->
+                            <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="GppMaybeRoundedIcon">
+                              <path fill="currentColor" d="m11.3 2.26-6 2.25C4.52 4.81 4 5.55 4 6.39v4.7c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91v-4.7c0-.83-.52-1.58-1.3-1.87l-6-2.25c-.45-.18-.95-.18-1.4-.01zM12 16c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm0-4c-.55 0-1-.45-1-1V8c0-.55.45-1 1-1s1 .45 1 1v3c0 .55-.45 1-1 1z"></path>
+                            </svg>
+                            Recommended
+                          </div>
+                          <ul class="setting_list" style="margin: 2rem 0;">
+                            <li>
+                              <p>2FA is an additional security layer that requires you to enter a passcode in order to log in or transfer assets, for example. To enable it, install an application such as Google Authenticator or Authy on your smartphone, click on the button below and scan the provided QR code, then enter the 6-digit code from your authenticator.</p>
+                            </li>
+                          </ul>
+                          <button class="boost_btn primary" data-bs-toggle="modal" data-bs-target="#VerifyModal">Enable</button>
+                          <button class="boost_btn oulined_primary" style="margin-left: 1rem;">Disable</button>
+                        </div>
+                      </div>
+
+                      <div class="setting_card">
+                        <div class="setting_header">Deactivate</div>
+                        <div class="setting_body">
+                          <ul class="setting_list" style="margin: 2rem 0;">
+                            <li>
+                              <p>Click here if you wish to permanently close your app account. You will receive an email with a link to confirm your request, which will then be processed by our support team.</p>
+                            </li>
+                          </ul>
+                          <button class="boost_btn danger" onclick="closeAccount()">Close Account</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For Mobile bottom menu -->
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="mobile_menu">
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn_action_boost" onclick="CommonMenu(true)">
+                <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <path fill="currentColor" d="M48 88v80c0 13.3-10.7 24-24 24s-24-10.7-24-24V88C0 39.4 39.4 0 88 0H552c48.6 0 88 39.4 88 88v80c0 13.3-10.7 24-24 24s-24-10.7-24-24V88c0-22.1-17.9-40-40-40H88C65.9 48 48 65.9 48 88zm416 8h48l0 352c0 35.3-28.7 64-64 64H192c-35.3 0-64-28.7-64-64l0-352h48l0 304c35.3 0 64 28.7 64 64H400c0-35.3 28.7-64 64-64V96zM320 352c-53 0-96-35.8-96-80s43-80 96-80s96 35.8 96 80s-43 80-96 80z"></path>
+                </svg>
+                Deposit
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn_action_boost" onclick="CommonMenu(true)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                    <path d="M9.5 13.7502C9.5 14.7202 10.25 15.5002 11.17 15.5002H13.05C13.85 15.5002 14.5 14.8202 14.5 13.9702C14.5 13.0602 14.1 12.7302 13.51 12.5202L10.5 11.4702C9.91 11.2602 9.51001 10.9402 9.51001 10.0202C9.51001 9.18023 10.16 8.49023 10.96 8.49023H12.84C13.76 8.49023 14.51 9.27023 14.51 10.2402" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M12 7.5V16.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </g>
+                  <path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M22 6V2H18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M17 7L22 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                Withdraw
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn_action_boost" onclick="CommonMenu(true)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.39969 6.32015L15.8897 3.49015C19.6997 2.22015 21.7697 4.30015 20.5097 8.11015L17.6797 16.6002C15.7797 22.3102 12.6597 22.3102 10.7597 16.6002L9.91969 14.0802L7.39969 13.2402C1.68969 11.3402 1.68969 8.23015 7.39969 6.32015Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path opacity="0.34" d="M10.1094 13.6501L13.6894 10.0601" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                Send
+              </button>
+            </div>
+            <div class="col-6">
+              <button class="btn btn_action_boost" onclick="CommonMenu(true)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                    <path d="M3.58008 5.16016H17.4201C19.0801 5.16016 20.4201 6.50016 20.4201 8.16016V11.4802" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
+                    <path d="M6.74008 2L3.58008 5.15997L6.74008 8.32001" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
+                  </g>
+                  <path d="M20.4201 18.84H6.58008C4.92008 18.84 3.58008 17.5 3.58008 15.84V12.52" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <path d="M17.2598 22.0002L20.4198 18.8402L17.2598 15.6802" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
+                </svg>
+                Exchange
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <!-- VerifyModal modal -->
+      <div class="modal fade" id="VerifyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal_header">
+              <h5>ENABLE 2FA</h5>
+              <button class="modal_close" onclick="handleClose()">
+                <svg width="24" height="24" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                  <path fill="currentColor" d="M3.646 3.354a.5.5 0 0 1 0 .708l8 8a.5.5 0 0 1-.708.708l-8-8a.5.5 0 0 1 .708-.708z" />
+                  <path fill="currentColor" d="M10.354 3.354a.5.5 0 0 1 0 .708l-8 8a.5.5 0 1 1-.708-.708l8-8a.5.5 0 0 1 .708 0z" />
+                </svg>
+              </button>
+            </div>
+            <div class="modal_body">
+              <!-- Notice for Earn -->
+              <div id="Enablecode">
+                <div class="container" style="text-align: center;">
+                  <span class="f-secondary fw-500" style="font-size: 12px;">To enable 2FA for Yield App, open an authenticator app on your mobile device and scan this QR code</span>
+                </div>
+                <div class="container" style="text-align: center;">
+                  <div class="qr_code">
+                    <img src="./images//qr_code.png" />
+                  </div>
+                </div>
+                <div class="container" style="text-align: center;">
+                  <span class="f-secondary fw-500" style="font-size: 12px;">Or enter the following code manually:</span>
+                </div>
+                <div class="container" style="text-align: center;">
+                  <div class="f-primary fw-500 bg-lightprimary fs-6 p-2 rounded" style=" word-break: break-all; display: flex; align-items: center;">
+                    PB2VC2DGH5ZTUUSWKJ5WC2C2KNXGQTC5FJZFQKJYIM2FK7KHLNWA
+                    <button class="copy_address">
+                      <!-- Replace the following line with the equivalent HTML for the copy icon -->
+                      <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ContentCopyRoundedIcon">
+                        <path fill="currentColor" d="M15 20H5V7c0-.55-.45-1-1-1s-1 .45-1 1v13c0 1.1.9 2 2 2h10c.55 0 1-.45 1-1s-.45-1-1-1zm5-4V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2zm-2 0H9V4h9v12z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="f-secondary fs-6 my-3">Once registered, you’ll start seeing 6-digit verification codes in the app</p>
+                  <a href="/" class="f-primary" style="font-size: 12px; text-decoration: underline;">Don’t have an authenticator app?</a>
+                </div>
+                <div class="modal_footer d-flex align-items justify-content-end w-100">
+                  <button class="boost_btn oulined_primary w-50">Cancel</button>
+                  <button class="boost_btn primary setEnablefa w-50">Next</button>
+                </div>
+              </div>
+
+              <!-- Verification code  -->
+              <div class="mt-2 d-none" id="verify_box">
+                <div class="container text-center">
+                  <span class="f-secondary fw-500 fs-6 mb-3 d-block">Please enter 2FA code from your authenticator app to confirm</span>
+                  <input type="number" class="input_filed w-100" placeholder="Enter 6-digit code" />
+                </div>
+                <div class="modal_footer d-flex align-content-center justify-content-end">
+                  <button data-bs-dismiss="modal" class="boost_btn oulined_primary setEnablefa w-50">Cancel</button>
+                  <button data-bs-dismiss="modal" class="boost_btn primary w-50">Enable 2FA</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+      <script>
+        $(".setEnablefa").click(function () {
+          if ($("#verify_box").hasClass("d-none")) {
+            $("#Enablecode").addClass("d-none");
+            $("#verify_box").removeClass("d-none");
+          } else {
+            $("#Enablecode").removeClass("d-none");
+            $("#verify_box").addClass("d-none");
+          }
+        });
+      </script>
+  </body>
+
+</html>

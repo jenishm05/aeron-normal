@@ -1,0 +1,597 @@
+.drawer_boost {
+  width: auto !important;
+
+  .offcanvas-body {
+    max-width: 50rem;
+    min-width: 50rem;
+    width: 100%;
+    padding: 1rem;
+
+
+    @media screen and (max-width:575px) {
+      min-width: 36rem;
+    }
+  }
+
+  .other_link {
+    margin-top: 3rem;
+    border-top: 1px solid var(--color_grey);
+  }
+
+  .divider {
+    margin: 1rem 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color_grey);
+  }
+
+  button.close_drawer {
+    background-color: var(--color_lightprimary);
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 3rem;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    color: var(--color_primary);
+    margin-bottom: 1rem;
+    margin: 0.5rem;
+
+    svg {
+      height: 2rem;
+    }
+  }
+
+  .tab_drawer {
+    border: 1px solid var(--border_color);
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+
+    li {
+      width: 25%;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        height: auto;
+        min-height: auto;
+        padding: 1rem 2rem;
+        border-radius: 0.6rem;
+        color: var(--color_secondary);
+        text-transform: capitalize;
+        width: 100%;
+        border: none !important;
+
+        &.active {
+          background: var(--color_primary);
+          color: var(--color_white);
+        }
+      }
+    }
+  }
+
+  h3.title_big {
+    font-size: 2.6rem;
+    color: var(--color_primary);
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+
+
+  h4.title {
+    font-size: 2rem;
+    color: var(--color_primary);
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+
+  p.sub_title {
+    font-size: 1.4rem;
+    color: var(--color_secondary);
+    font-weight: 500;
+    margin: 0.6rem 0;
+    // text-transform: capitalize;
+  }
+
+  .exchange_box {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    background-color: var(--color_lightprimary);
+
+    &.from {
+      position: relative;
+      margin-bottom: 10rem;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4rem;
+        width: 1px;
+        background-color: var(--color_secondary);
+        z-index: -1;
+      }
+    }
+
+    &.to {
+      position: relative;
+      margin-top: 10rem;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: -40%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4rem;
+        width: 1px;
+        background-color: var(--color_secondary);
+        z-index: -1;
+      }
+    }
+
+    .fromTo {
+      padding: 0 0.5rem;
+      display: block;
+      text-align: left;
+
+      h5.price {
+        font-size: 2.6rem;
+        font-weight: 600;
+        color: var(--color_primary);
+        margin-top: 0.8rem;
+      }
+    }
+
+    .balance_symbol {
+      padding: 0 0.5rem;
+      display: block;
+      text-align: right;
+    }
+  }
+
+  button.exchage_btn {
+    min-width: 4rem;
+    width: 4rem;
+    height: 4rem;
+    min-height: 4rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: var(--color_primary);
+    color: var(--color_white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      height: 2rem;
+    }
+  }
+
+  .crypto_deposit {
+    li {
+      margin-bottom: 1.5rem;
+      background-color: var(--color_white);
+      border-radius: 1rem;
+      border: 1px solid var(--color_grey);
+      transition: 0.3s;
+      padding: 0.6rem;
+      position: relative;
+
+      &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        transform: translateY(-50%);
+        background-image: url('../../images/arrow.svg');
+        height: 1.4rem;
+        width: 1.4rem;
+        background-repeat: no-repeat;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+        .symbol_icon {
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          padding: 0.4rem;
+          color: var(--color_primary);
+
+          img,
+          svg {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+
+        .symbol_name {
+          display: block;
+          width: calc(100% - 5.5rem);
+          margin-left: 2rem;
+
+          p {
+            font-size: 1.4rem;
+            color: var(--color_secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+
+          span {
+            font-size: 1.2rem;
+            color: var(--color_secondary);
+            padding-right: 3rem;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  // Address Code
+  .address_code {
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--color_grey);
+
+    &.bn {
+      border-top: none;
+    }
+
+    .balance_toggle {
+      margin: 1.2rem 0;
+      width: 100%;
+      border-radius: 0.5rem;
+      background-color: var(--color_lightprimary);
+      padding: 0.6rem;
+
+      .MuiToggleButton-root {
+        background-color: transparent;
+        font-size: 1.2rem;
+        border: none;
+        text-transform: capitalize;
+        width: 50%;
+        color: var(--color_primary);
+        padding: 0.8rem 1rem;
+        border-radius: 0.5rem;
+
+        &.Mui-selected {
+          background: var(--color_gradientprimary);
+          color: var(--color_white);
+        }
+      }
+    }
+
+    .transfer_code {
+      padding: 0;
+      margin: 1rem 0 2rem 0;
+      box-shadow: none;
+      border: none;
+      border-radius: 0.6rem;
+      border: 1px solid var(--color_grey);
+      border-radius: 0.5rem;
+
+      &::before {
+        display: none;
+      }
+
+      .select_symbol {
+        display: flex;
+        align-items: center;
+
+        .symbol {
+          max-height: 2.6rem;
+          max-width: 2.6rem;
+          height: 100%;
+          width: 100%;
+        }
+
+        .symbol_name {
+          display: block;
+          margin-left: 1.5rem;
+
+          p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color_primary);
+            text-transform: capitalize;
+            margin-bottom: 0;
+          }
+
+          span {
+            font-size: 1.2rem;
+            color: var(--color_secondary);
+            font-weight: 400;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .qr_code {
+        max-width: 16rem;
+        max-height: 16rem;
+        height: 100%;
+        width: 100%;
+        margin: 1rem auto;
+
+        img,
+        svg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .copy_address_box {
+        margin-top: 1rem;
+        border-top: 1px solid var(--color_grey);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        padding-top: 1rem;
+
+        .addres_Navlink {
+          p {
+            font-size: 1.3rem;
+            color: var(--color_secondary);
+            margin-bottom: 0.4rem;
+            margin-bottom: 0;
+          }
+
+          h5 {
+            font-size: 1.4rem;
+            color: var(--color_primary);
+            max-width: 22rem;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: 600;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .addres_action {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+
+          button.address_btn {
+            min-width: 3rem;
+            min-height: 3rem;
+            padding: 0.4rem;
+            border-radius: 0.5rem;
+            background-color: transparent;
+            color: var(--color_primary);
+            margin: 0.2rem;
+
+            svg {
+              height: 2.2rem;
+              color: var(--color_primary);
+            }
+          }
+        }
+      }
+    }
+
+    .tips_box {
+      background-color: var(--color_lightprimary);
+      color: var(--color_secondary);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-size: 1.3rem;
+      margin: 1.5rem 0;
+      display: block;
+    }
+
+    // Earn Amount percantage
+    .percantage_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.8rem;
+
+      .percentage {
+        display: flex;
+        align-items: center;
+
+        button.per_btn {
+          padding: 0.5rem 0.8rem;
+          font-size: 1.1rem;
+          // border: 1px solid var(--color_secondary);
+          color: var(--color_primary);
+          background-color: var(--color_lightprimary);
+          margin: 0 0.2rem 0 0;
+          min-width: 4rem;
+        }
+      }
+
+      h4 {
+        font-size: 1.3rem;
+        color: var(--color_primary);
+        font-weight: 600;
+      }
+    }
+
+    .drawer_select_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--color_grey);
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+
+      .select_symbol {
+        display: flex;
+        align-items: center;
+
+        .symbol {
+          max-height: 2.6rem;
+          max-width: 2.6rem;
+          height: 100%;
+          width: 100%;
+        }
+
+        .symbol_name {
+          display: block;
+          margin-left: 1rem;
+          max-width: calc(100% - 6rem);
+
+          p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color_primary);
+            text-transform: capitalize;
+            margin-bottom: 0;
+          }
+
+          span {
+            font-size: 1.2rem;
+            color: var(--color_secondary);
+            font-weight: 400;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            display: block;
+            max-width: 26rem;
+          }
+        }
+      }
+    }
+
+    // Summary List
+    .summary_list {
+      margin-top: 0.5rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: var(--color_secondary);
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: var(--color_primary);
+        }
+      }
+    }
+
+    button.edit_address {
+      min-width: 3rem;
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--color_lightprimary);
+      color: var(--color_primary);
+      padding: 0.6rem !important;
+
+      svg {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media screen and (max-width:767px) {
+    padding: 1.6rem 1rem;
+  }
+
+}
+
+
+.drawer_select_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+
+  &.filled {
+    background: var(--color_primary);
+  }
+
+  .select_symbol {
+    display: flex;
+    align-items: center;
+
+    .symbol {
+      max-height: 2.6rem;
+      max-width: 2.6rem;
+      height: 100%;
+      width: 100%;
+    }
+
+    .symbol_name {
+      display: block;
+      margin-left: 1rem;
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--color_white);
+        text-transform: capitalize;
+        margin-bottom: 0;
+      }
+
+      span {
+        font-size: 1.2rem;
+        color: var(--color_secondary);
+        font-weight: 400;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .symbol_price {
+    display: block;
+    text-align: right;
+
+    p {
+      font-size: 1.3rem;
+      color: var(--color_white);
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    span {
+      font-size: 1.2rem;
+      color: var(--color_grey);
+      font-weight: 400;
+    }
+  }
+}

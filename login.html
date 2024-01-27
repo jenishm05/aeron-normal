@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/app/app.css" />
+  </head>
+
+  <body>
+    <div class="header_body">
+      <div class="form">
+        <div class="form_logo">
+          <img src="./images/logo-big.jpeg" />
+        </div>
+
+        <div class="signForm">
+          <h4 class="form_title">Log in</h4>
+
+          <div class="form_box">
+            <label class="label fs-25 fw-600 f-primary">Email Address</label>
+            <input type="email" placeholder="yourmail@mail.com" class="input_filed w-100" />
+          </div>
+
+          <div class="form_box">
+            <label class="label fs-25 fw-600 f-primary">Password</label>
+            <div class="with_action">
+              <input type="password" placeholder="Enter Password" class="input_filed w-100" />
+              <button class="input_actions" onclick="passwordShowHide()">
+                Show/Hide
+              </button>
+            </div>
+          </div>
+
+          <a href="./forgotpassword.html" class="other_link mt-2">Forgot your password?</a>
+          <button class="sign_form_btn w-100">Log In</button>
+
+          <div class="form_footer">
+            <p class="lines mb-0">Not have an account?</p>
+            <a href="./register.html" class="other_link">Register</a>
+          </div>
+        </div>
+
+        <div class="sign_inup_footer">
+          <p class="f-primary text-center fs-20">@2023 All right Reserved</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
