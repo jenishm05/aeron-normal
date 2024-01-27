@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="./css/app/app.css">
+    <link rel="stylesheet" href="./css/faq/faq.css">
+  </head>
+
+  <body>
+    <h4 class='title'>Submit a help request</h4>
+    <p class='sub_title'>Couldn't find an answer in the help Center? Tell us what problems or questions you have.</p>
+
+    <div class="mt-3">
+      <label class='label'>Email</label>
+      <input type='email' placeholder='Enter mail' class='input_filed w-100'>
+    </div>
+
+    <div class="mt-3">
+      <label class='label'>Topic</label>
+      <select class='transition_select input_filed w-100'>
+        <option value="topic1">Topic 2</option>
+        <option value="topic2">Topic 2</option>
+        <option value="topic3">Topic 3</option>
+        <option value="topic4">Topic 4</option>
+        <option value="topic5">Topic 5</option>
+      </select>
+    </div>
+
+    <div class="mt-3">
+      <label class='label'>Message</label>
+      <textarea rows='5' placeholder='Enter mail' class='input_filed w-100'></textarea>
+    </div>
+
+    <div class="mt-3">
+      <label class='label attachFile'>
+        Support file types .jpg .png (optional)
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.4">
+            <path d="M12 2V9L14 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 9L10 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <path opacity="0.4" d="M1.98047 13H6.39047C6.77047 13 7.11047 13.21 7.28047 13.55L8.45047 15.89C8.79047 16.57 9.48047 17 10.2405 17H13.7705C14.5305 17 15.2205 16.57 15.5605 15.89L16.7305 13.55C16.9005 13.21 17.2505 13 17.6205 13H21.9805" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 4.12988C3.46 4.64988 2 6.72988 2 10.9999V14.9999C2 19.9999 4 21.9999 9 21.9999H15C20 21.9999 22 19.9999 22 14.9999V10.9999C22 6.72988 20.54 4.64988 17 4.12988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <input type='file' id='attachFile' class='input_filed' />
+      </label>
+    </div>
+
+    <button class='boost_btn primary w-100'>Submit</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const faqs = [
+        {
+          question: 'How do I deposit with crypto?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How do I Deposit with JPY?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How do I deposit with credit/debit card',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How to withdraw crypto?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How to withdraw JPY?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'Is it necessary to verify my account (KYC) to withdraw?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+      ]
+
+      for (let i = 1; i < faqs.length; i++) {
+        const accordionBlock = `
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading${i}">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="true" aria-controls="collapse${i}">
+                    <span class="faq_count">${i + 1}</span>
+                    ${faqs[i].question}
+                  </button>
+                </h2>
+                <div id="collapse${i}" class="accordion-collapse collapse" aria-labelledby="heading${i}" data-bs-parent="#appendAccordion">
+                  <div class="accordion-body">
+                    <p>${faqs[i].answer}</p>
+                  </div>
+                </div>
+              </div>
+            `;
+
+        $("#appendAccordion").append(accordionBlock);
+      }
+    </script>
+  </body>
+
+</html>

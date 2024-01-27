@@ -5,6 +5,7 @@
 @import "../balance/balance.scss";
 @import "../transaction//transaction.scss";
 @import "../profile/profile.scss";
+@import "../faq//faq.scss";
 @import "../drawer/drawer.scss";
 @import "../variables/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -311,6 +312,29 @@ label.label {
   text-transform: capitalize;
   color: var(--color_dark);
   font-weight: 500 !important;
+
+  &.attachFile {
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--color_primary);
+    padding: 1.2rem 1.4rem;
+    font-weight: 400 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--color_lightprimary);
+    margin-top: 1rem;
+
+    .input_filed {
+      display: none;
+    }
+
+    svg {
+      font-size: 3rem;
+    }
+  }
 }
 
 .input_filed {
@@ -1008,5 +1032,80 @@ label.label {
     height: 100%;
     width: 100%;
     border-radius: 50%;
+  }
+}
+
+
+
+// ========= Help Center
+.help_box {
+  margin-top: 2rem;
+
+  .help_item {
+    padding: 1rem;
+    border-radius: 0.6rem;
+    margin-top: 1.5rem;
+    display: block;
+
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .help_icon {
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.6rem;
+        background-color: var(--color_lightprimary);
+        padding: 0.5rem;
+        margin-right: 1rem;
+
+        svg {
+          height:3rem;
+          color: var(--color_primary);
+        }
+      }
+
+      span {
+        font-size: 1.5rem;
+        color: var(--color_secondary);
+        font-weight: 500;
+      }
+    }
+
+    &.filled {
+      background-color: var(--color_lightprimary);
+    }
+
+    h4 {
+      font-size: 1.8rem;
+      color: var(--color_primary);
+      font-weight: 600;
+      margin-bottom: 1.4rem;
+      width: 100%;
+      display: block;
+      padding: 0 1rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      color: var(--color_secondary);
+      font-weight: 400;
+      width: 100%;
+      display: block;
+      margin-top: 0.6rem;
+      padding: 0 1rem;
+    }
+
+    button.more_read {
+      font-size: 1.2rem;
+      color: var(--color_primary);
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-top: 2rem;
+    }
   }
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="./css/app/app.css">
+    <link rel="stylesheet" href="./css/faq/faq.css">
+  </head>
+
+  <body>
+    <div class="accordion" id="accordionExample">
+      <!-- <div class="accordion-item ">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            <span class='faq_count'>1</span>
+            Questions Title 1
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Answer to question 1 goes here.</p>
+          </div>
+        </div>
+      </div> -->
+
+      <div id="appendAccordion"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const faqs = [
+        {
+          question: 'How do I deposit with crypto?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How do I Deposit with JPY?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How do I deposit with credit/debit card',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How to withdraw crypto?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'How to withdraw JPY?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+        {
+          question: 'Is it necessary to verify my account (KYC) to withdraw?',
+          answer: 'Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat. Aliquam eget maximus est, id dignissim quam.'
+        },
+      ]
+
+      for (let i = 1; i < faqs.length; i++) {
+        const accordionBlock = `
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading${i}">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}" aria-expanded="true" aria-controls="collapse${i}">
+                    <span class="faq_count">${i + 1}</span>
+                    ${faqs[i].question}
+                  </button>
+                </h2>
+                <div id="collapse${i}" class="accordion-collapse collapse" aria-labelledby="heading${i}" data-bs-parent="#appendAccordion">
+                  <div class="accordion-body">
+                    <p>${faqs[i].answer}</p>
+                  </div>
+                </div>
+              </div>
+            `;
+
+        $("#appendAccordion").append(accordionBlock);
+      }
+    </script>
+  </body>
+
+</html>

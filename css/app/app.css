@@ -1379,6 +1379,99 @@
   width: 3.5rem;
 }
 
+.accordion {
+  border: none;
+  border-radius: 0.6rem !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  margin-top: 1.5rem !important;
+  padding: 0 !important;
+}
+
+.accordion::before {
+  display: none;
+}
+
+.accordion .accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.accordion .accordion-button {
+  padding: 1.2rem 1.2rem;
+  min-height: 3.5rem;
+  border: 1px solid var(--color_grey);
+  border-radius: 0.7rem;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 1.5rem;
+  color: var(--color_secondary);
+  font-weight: 500;
+  width: 100%;
+}
+
+.accordion .accordion-button .faq_count {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 0.5rem;
+  background-color: var(--color_lightprimary);
+  padding: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: var(--color_primary);
+}
+
+.accordion .accordion-button .MuiAccordionSummary-expandIconWrapper svg {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .accordion .accordion-button {
+    font-size: 1.4rem;
+  }
+}
+
+.accordion.Mui-expanded .MuiAccordionSummary-content span {
+  color: var(--color_primary);
+}
+
+.accordion.Mui-expanded .MuiAccordionSummary-content .faq_count {
+  background-color: transparent;
+  background: var(--color_gradientprimary);
+  color: var(--color_white);
+}
+
+.accordion .accordion-collapse {
+  background-color: transparent;
+}
+
+.accordion .accordion-collapse .accordion-body {
+  margin-top: 1rem;
+}
+
+.accordion .accordion-collapse .accordion-body p {
+  font-size: 1.4rem;
+  color: var(--color_secondary);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 991px) {
+  .accordion .accordion-collapse .accordion-body p {
+    font-size: 1.3rem;
+  }
+}
+
 .drawer_boost {
   width: auto !important;
 }
@@ -2468,6 +2561,35 @@ label.label {
   font-weight: 500 !important;
 }
 
+label.label.attachFile {
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1.4rem;
+  color: var(--color_primary);
+  padding: 1.2rem 1.4rem;
+  font-weight: 400 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  background-color: var(--color_lightprimary);
+  margin-top: 1rem;
+}
+
+label.label.attachFile .input_filed {
+  display: none;
+}
+
+label.label.attachFile svg {
+  font-size: 3rem;
+}
+
 .input_filed {
   border-radius: 0.5rem;
   font-size: 1.5rem;
@@ -3344,5 +3466,87 @@ label.label {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+
+.help_box {
+  margin-top: 2rem;
+}
+
+.help_box .help_item {
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.help_box .help_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.help_box .help_item a .help_icon {
+  height: 5rem;
+  width: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.6rem;
+  background-color: var(--color_lightprimary);
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.help_box .help_item a .help_icon svg {
+  height: 3rem;
+  color: var(--color_primary);
+}
+
+.help_box .help_item a span {
+  font-size: 1.5rem;
+  color: var(--color_secondary);
+  font-weight: 500;
+}
+
+.help_box .help_item.filled {
+  background-color: var(--color_lightprimary);
+}
+
+.help_box .help_item h4 {
+  font-size: 1.8rem;
+  color: var(--color_primary);
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+  width: 100%;
+  display: block;
+  padding: 0 1rem;
+}
+
+.help_box .help_item p {
+  font-size: 1.4rem;
+  color: var(--color_secondary);
+  font-weight: 400;
+  width: 100%;
+  display: block;
+  margin-top: 0.6rem;
+  padding: 0 1rem;
+}
+
+.help_box .help_item button.more_read {
+  font-size: 1.2rem;
+  color: var(--color_primary);
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=app.css.map */
