@@ -1,4 +1,4 @@
-@import url('../header/header.css');
+@import url("../header/header.css");
 // @import url('../index/index.scss');
 @import "../sidebar//sidebar.scss";
 @import "../earn/earn.scss";
@@ -114,26 +114,27 @@ button.boost_btn {
 }
 
 button.btn_action_boost {
-      padding: 0.8rem 2rem;
-      width: 100%;
-      border-radius: 5rem;
-      font-size: 1.3rem;
-      background-color: var(--color_primary);
-      color: var(--color_white);
-      text-transform: capitalize;
-      margin-top: 0.6rem;
-  
-      svg {
-        height: 1.8rem;
-        width: 1.8rem;
-        margin-right: 1rem;
-      }
-    }
+  padding: 0.8rem 2rem;
+  width: 100%;
+  border-radius: 5rem;
+  font-size: 1.3rem;
+  background-color: var(--color_primary);
+  color: var(--color_white);
+  text-transform: capitalize;
+  margin-top: 0.6rem;
+
+  svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 1rem;
+  }
+}
 
 .mainlayout {
   height: 100vh;
   width: 100%;
   overflow-y: auto;
+  padding-bottom: 10rem;
 }
 
 .assets_title {
@@ -361,6 +362,7 @@ label.label {
 
     .selection {
       width: 100%;
+
       .select2-selection {
         min-height: 4rem;
         max-height: 100%;
@@ -390,14 +392,14 @@ label.label {
 .select2-dropdown {
   border: 1px solid var(--border_color);
   border-radius: 1rem;
-  box-shadow:
-    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    
+
   .select2-results__option {
     span {
       font-size: 1.4rem;
     }
+
     img {
       height: 2.4rem;
       width: 2.4rem;
@@ -409,9 +411,6 @@ label.label {
     }
   }
 }
-
-
-
 
 .modal_header {
   display: flex;
@@ -449,7 +448,7 @@ label.label {
     color: var(--color_primary);
     padding: 0.6rem;
 
-    svg{
+    svg {
       height: 100%;
       width: 100%;
     }
@@ -710,7 +709,6 @@ label.label {
       }
     }
 
-
     .symbol_list {
       max-height: 34rem;
       height: 100%;
@@ -792,7 +790,6 @@ label.label {
     display: block;
     margin-top: 1.5rem;
     text-align: center;
-
   }
 
   a.link {
@@ -805,47 +802,47 @@ label.label {
 }
 
 .tab_drawer {
-    border: 1px solid var(--border_color);
-    border-radius: 0.4rem;
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-    background-color: var(--color_white) !important;
+  border: 1px solid var(--border_color);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  background-color: var(--color_white) !important;
 
-    li {
-      width: auto;
+  li {
+    width: auto;
 
-      button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.3rem;
-        height: auto;
-        min-height: auto;
-        padding: 1rem 2rem;
-        border-radius: 0.6rem;
-        color: var(--color_secondary);
-        text-transform: capitalize;
-        width: 100%;
-        border: none !important;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      height: auto;
+      min-height: auto;
+      padding: 1rem 2rem;
+      border-radius: 0.6rem;
+      color: var(--color_secondary);
+      text-transform: capitalize;
+      width: 100%;
+      border: none !important;
 
-        &.active {
-          background: var(--color_primary) !important;
-          color: var(--color_white) !important;
-        }
+      &.active {
+        background: var(--color_primary) !important;
+        color: var(--color_white) !important;
       }
     }
   }
+}
 
-  // ========= For login
-  @import '../Variables/Variables.scss';
-@import url('../app.css');
-@import url('../index.css');
+// ========= For login
+@import "../Variables/Variables.scss";
+@import url("../app.css");
+@import url("../index.css");
 
 .header_body {
   min-height: 100vh;
   width: 100%;
   padding: 1.5rem;
-  box-shadow: 0px 0px 32px 2px #0000000D;
+  box-shadow: 0px 0px 32px 2px #0000000d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -857,7 +854,7 @@ label.label {
     background-color: var(--color_white);
     padding: 2.6rem 2rem;
     border-radius: 0.8rem;
-    box-shadow: 0px 0px 16px 0px #0000000D;
+    box-shadow: 0px 0px 16px 0px #0000000d;
 
     .form_logo {
       height: 2.5rem;
@@ -874,6 +871,7 @@ label.label {
     }
   }
 }
+ 
 
 .signForm {
   background-color: var(--color_white);
@@ -930,7 +928,6 @@ label.label {
         }
       }
     }
-
   }
 
   .form_footer {
@@ -938,7 +935,6 @@ label.label {
     align-items: center;
     justify-content: center;
     margin-top: 1.8rem;
-
   }
 
   p.tag_line {
@@ -1000,7 +996,7 @@ label.label {
     text-transform: capitalize;
   }
 
-  @media screen and (max-width:991px) {
+  @media screen and (max-width: 991px) {
     margin: 2rem 0;
   }
 }
@@ -1017,7 +1013,7 @@ label.label {
 
 .otp_verify_Progress {
   border-radius: 50%;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   height: 6.5rem;
   width: 6.5rem;
   margin: 2rem auto;
@@ -1035,7 +1031,30 @@ label.label {
   }
 }
 
+#pagination {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: var(--color_white);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 
+  li {
+    margin-left: 1rem;
+    a {
+      font-size: 1.4rem;
+      padding: 1rem;
+      background-color: var(--color_lightprimary);
+      height: 2.8rem;
+      width: 2.8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color_dark);
+    }
+  }
+}
 
 // ========= Help Center
 .help_box {
@@ -1064,7 +1083,7 @@ label.label {
         margin-right: 1rem;
 
         svg {
-          height:3rem;
+          height: 3rem;
           color: var(--color_primary);
         }
       }

@@ -166,6 +166,20 @@
   padding: 0.5rem;
   background-color: transparent;
   color: var(--color_dark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header_menu .dropdown.notification .dropdown-menu ul li button.remove_notify svg {
+  height: 2rem;
+  width: 2rem;
 }
 
 @media screen and (max-width: 991px) {

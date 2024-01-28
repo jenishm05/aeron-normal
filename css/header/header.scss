@@ -145,6 +145,14 @@
                 padding: 0.5rem;
                 background-color: transparent;
                 color: var(--color_dark);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                 svg{
+                  height: 2rem;
+                  width: 2rem;
+                 }
               }
             }
           }

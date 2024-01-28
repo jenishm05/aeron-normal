@@ -1,0 +1,70 @@
+.transaction_tab {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid var(--border_color);
+  background-color: var(--color_white);
+  padding: 0.6rem;
+  border-radius: 1rem;
+}
+
+.transaction_tab .tabs_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  font-size: 1.3rem;
+  height: auto;
+  min-height: auto;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  color: var(--color_secondary);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.transaction_tab .tabs_btn input[type="radio"] {
+  display: none;
+}
+
+.transaction_tab .tabs_btn input[type="radio"]:checked + label {
+  background-color: var(--color_primary);
+  color: var(--color_white);
+}
+
+.transaction_tab .tabs_btn svg {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.transaction_tab .tabs_btn.Mui-selected {
+  background: var(--color_primary);
+  color: var(--color_white);
+}
+
+.filter_transaction {
+  max-width: 100% !important;
+  background-color: var(--color_white);
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border_color);
+}
+
+.filter_transaction select.filter_items,
+.filter_transaction input.filter_items {
+  border: 1px solid var(--border_color);
+  padding: 1rem;
+  background-color: var(--color_white);
+  font-size: 1.4rem;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+/*# sourceMappingURL=transaction.css.map */

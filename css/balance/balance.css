@@ -269,6 +269,7 @@
 
 .owl_card_slider .owl-item {
   min-height: 20rem !important;
+  margin-right: 1.5rem;
 }
 
 .owl_card_slider .owl-item .item {
