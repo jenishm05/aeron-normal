@@ -698,10 +698,78 @@
 .balanceCard_box {
   width: 100%;
   border-radius: 1rem;
-  background: var(--color_white);
   padding: 1.5rem;
   margin-bottom: 1rem;
   border: 1px solid var(--border_color);
+}
+
+.balanceCard_box .card_box {
+  position: relative;
+  border-radius: 1.5rem;
+  height: 20rem;
+  overflow: hidden;
+  padding: 3rem 2.5rem;
+}
+
+.balanceCard_box .card_box svg#visual {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 991px) {
+  .balanceCard_box .card_box {
+    height: 14rem;
+    padding: 2rem;
+  }
+}
+
+.balanceCard_box .card_simple {
+  background-color: var(--color_white);
+  padding: 3rem 2.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid #dfe7ef;
+  height: 100%;
+  position: relative;
+}
+
+.balanceCard_box .card_simple.green {
+  background-color: rgba(0, 156, 25, 0.1);
+}
+
+.balanceCard_box .card_simple.green .icons {
+  color: #009c19;
+  height: 14rem;
+  width: 14rem;
+}
+
+.balanceCard_box .card_simple.danger {
+  background-color: rgba(184, 0, 0, 0.1);
+}
+
+.balanceCard_box .card_simple.danger .icons {
+  color: #b80000;
+  height: 10rem;
+  width: 10rem;
+}
+
+.balanceCard_box .card_simple .icons {
+  position: absolute;
+  top: 80%;
+  right: 1rem;
+  color: var(--color_primary);
+  z-index: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .balanceCard_box .card_simple {
+    height: 12rem;
+    padding: 2rem;
+  }
 }
 
 .balanceCard_box .page_title {
@@ -711,6 +779,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .balanceCard_box .page_title button.page_icon {
@@ -740,6 +811,11 @@
 
 .balanceCard_box .page_title span {
   font-size: 2rem;
+  color: var(--color_white);
+  font-weight: 600;
+}
+
+.balanceCard_box .page_title span.dark {
   color: var(--color_dark);
 }
 
@@ -750,8 +826,8 @@
 }
 
 .balanceCard_box .dropdown_btn {
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: var(--color_lightprimary);
   color: var(--color_primary);
@@ -765,6 +841,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+  .balanceCard_box .dropdown_btn {
+    display: none;
+  }
 }
 
 .balanceCard_box button.btn_action_boost {
@@ -787,12 +869,48 @@
 .balanceCard_box h4.amount {
   font-size: 2.4rem;
   font-weight: 600;
-  color: var(--color_primary);
+  color: var(--color_white);
+  margin-top: 4rem;
+}
+
+.balanceCard_box h4.amount.dark {
+  color: var(--color_dark);
 }
 
 @media screen and (max-width: 991px) {
   .balanceCard_box h4.amount {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .balanceCard_box h4.amount {
+    margin-top: 2rem;
+  }
+}
+
+.balanceCard_box p.amount_small {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color_white);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.balanceCard_box p.amount_small.dark {
+  color: var(--color_secondary);
+}
+
+@media screen and (max-width: 991px) {
+  .balanceCard_box p.amount_small {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .balanceCard_box p.amount_small {
+    font-size: 1.3rem;
+    margin-top: 0;
   }
 }
 
@@ -2402,8 +2520,8 @@ button.btn_action_boost svg {
   padding: 1.2rem;
   background-color: var(--color_white);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
   border: 1px solid var(--border_color);
+  border-bottom: none;
   width: 100%;
 }
 
@@ -2598,6 +2716,11 @@ label.label.attachFile svg {
   border: 1px solid var(--color_grey);
   padding: 0.7rem 1.4rem;
   outline: none;
+}
+
+.input_filed.transparent {
+  background-color: transparent;
+  border: none;
 }
 
 .transition_select_2 {
@@ -3588,5 +3711,41 @@ label.label.attachFile svg {
   font-weight: 600;
   text-transform: capitalize;
   margin-top: 2rem;
+}
+
+.table_menu .btn-secondary {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: var(--color_lightprimary);
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.table_menu .btn-secondary svg {
+  color: var(--color_primary);
+  height: 100%;
+  width: 100%;
+}
+
+.table_menu .dropdown-menu {
+  max-width: 15rem;
+  border: 1px solid #ececec;
+  border-radius: 1rem;
+}
+
+.table_menu .dropdown-menu li a {
+  font-size: 1.3rem;
+  padding: 0.6rem 1.5rem;
+}
+
+.table_menu .dropdown-menu li a svg {
+  height: 2rem;
+  width: auto;
+  margin-right: 0.6rem;
+}
+
+.table_menu .dropdown-menu li a:hover {
+  background-color: var(--color_lightprimary);
+  color: var(--color_primary);
 }
 /*# sourceMappingURL=app.css.map */
