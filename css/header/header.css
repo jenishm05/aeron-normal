@@ -54,6 +54,14 @@
           justify-content: right;
 }
 
+.header .header_menu .deposit_btn {
+  background-color: var(--color_primary);
+  padding: 0.8rem 2rem;
+  background-color: var(--color_primary);
+  color: var(--color_white);
+  border-radius: 0.6rem;
+}
+
 .header .header_menu .dropdown {
   margin: 0 0 0 1rem;
 }

@@ -1,9 +1,9 @@
 .balanceCard_box {
   width: 100%;
   border-radius: 1rem;
-  padding: 1.5rem;
+  // padding: 1.5rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--border_color);
+  // border: 1px solid var(--border_color);
 
   .card_box {
     position: relative;
@@ -19,6 +19,7 @@
       height: 100%;
       width: 100%;
       z-index: -1;
+      display: none;
     }
 
     @media screen and (max-width: 991px) {
@@ -35,6 +36,10 @@
     border: 1px solid #dfe7ef;
     height: 100%;
     position: relative;
+
+    svg#visual{
+      display: none;
+    }
 
     // &.green {
     //   background-color: rgba(0, 156, 25, 0.1);
@@ -115,7 +120,7 @@
 
     span {
       font-size: 2rem;
-      color: var(--color_white);
+      color: var(--color_dark);
       font-weight: 800;
 
       &.dark {
@@ -164,7 +169,7 @@
   h4.amount {
     font-size: 2.4rem;
     font-weight: 600;
-    color: var(--color_white);
+    color: var(--color_dark);
     margin-top: 4rem;
 
     &.dark {
@@ -183,7 +188,7 @@
   p.amount_small {
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--color_white);
+    color: var(--color_dark);
     margin-top: 0.5rem;
     margin-bottom: 0;
 

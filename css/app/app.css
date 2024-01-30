@@ -694,9 +694,7 @@
 .balanceCard_box {
   width: 100%;
   border-radius: 1rem;
-  padding: 1.5rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--border_color);
 }
 
 .balanceCard_box .card_box {
@@ -714,6 +712,7 @@
   height: 100%;
   width: 100%;
   z-index: -1;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -731,6 +730,10 @@
   border: 1px solid #dfe7ef;
   height: 100%;
   position: relative;
+}
+
+.balanceCard_box .card_simple svg#visual {
+  display: none;
 }
 
 .balanceCard_box .card_simple .icons {
@@ -800,7 +803,7 @@
 
 .balanceCard_box .page_title span {
   font-size: 2rem;
-  color: var(--color_white);
+  color: var(--color_dark);
   font-weight: 800;
 }
 
@@ -858,7 +861,7 @@
 .balanceCard_box h4.amount {
   font-size: 2.4rem;
   font-weight: 600;
-  color: var(--color_white);
+  color: var(--color_dark);
   margin-top: 4rem;
 }
 
@@ -881,7 +884,7 @@
 .balanceCard_box p.amount_small {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--color_white);
+  color: var(--color_dark);
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
@@ -2398,12 +2401,12 @@ li {
   font-size: 2rem;
   font-weight: 700;
   color: var(--color_dark);
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 991px) {
   .page_title {
-    display: none;
+    padding: 0.5rem 0;
   }
 }
 
@@ -3496,6 +3499,12 @@ label.label.attachFile svg {
 }
 
 #pagination {
+  background-color: var(--color_white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#pagination ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3505,21 +3514,19 @@ label.label.attachFile svg {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  background-color: var(--color_white);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  width: 100%;
 }
 
-#pagination li {
+#pagination ul li {
   margin-left: 1rem;
 }
 
-#pagination li a {
-  font-size: 1.4rem;
+#pagination ul li a {
+  font-size: 1.2rem;
   padding: 1rem;
   background-color: var(--color_lightprimary);
-  height: 2.8rem;
-  width: 2.8rem;
+  height: 2.4rem;
+  width: 2.4rem;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3531,6 +3538,11 @@ label.label.attachFile svg {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--color_dark);
+}
+
+#pagination ul li a.active {
+  background-color: var(--color_primary);
+  color: var(--color_white);
 }
 
 .help_box {

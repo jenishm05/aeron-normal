@@ -1,9 +1,7 @@
 .balanceCard_box {
   width: 100%;
   border-radius: 1rem;
-  padding: 1.5rem;
   margin-bottom: 1rem;
-  border: 1px solid var(--border_color);
 }
 
 .balanceCard_box .card_box {
@@ -21,6 +19,7 @@
   height: 100%;
   width: 100%;
   z-index: -1;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -38,6 +37,10 @@
   border: 1px solid #dfe7ef;
   height: 100%;
   position: relative;
+}
+
+.balanceCard_box .card_simple svg#visual {
+  display: none;
 }
 
 .balanceCard_box .card_simple .icons {
@@ -107,7 +110,7 @@
 
 .balanceCard_box .page_title span {
   font-size: 2rem;
-  color: var(--color_white);
+  color: var(--color_dark);
   font-weight: 800;
 }
 
@@ -165,7 +168,7 @@
 .balanceCard_box h4.amount {
   font-size: 2.4rem;
   font-weight: 600;
-  color: var(--color_white);
+  color: var(--color_dark);
   margin-top: 4rem;
 }
 
@@ -188,7 +191,7 @@
 .balanceCard_box p.amount_small {
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--color_white);
+  color: var(--color_dark);
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
