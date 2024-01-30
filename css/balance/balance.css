@@ -40,46 +40,13 @@
   position: relative;
 }
 
-.balanceCard_box .card_simple.green {
-  background-color: rgba(0, 156, 25, 0.1);
-}
-
-.balanceCard_box .card_simple.green .icons {
-  color: #009c19;
-  height: 14rem;
-  width: 14rem;
-}
-
-@media screen and (max-width: 767px) {
-  .balanceCard_box .card_simple.green .icons {
-    height: 10rem;
-    width: 10rem;
-  }
-}
-
-.balanceCard_box .card_simple.danger {
-  background-color: rgba(184, 0, 0, 0.1);
-}
-
-.balanceCard_box .card_simple.danger .icons {
-  color: #b80000;
-  height: 10rem;
-  width: 10rem;
-}
-
-@media screen and (max-width: 767px) {
-  .balanceCard_box .card_simple.danger .icons {
-    height: 7rem;
-    width: 7rem;
-  }
-}
-
 .balanceCard_box .card_simple .icons {
   position: absolute;
-  top: 50%;
-  right: 1rem;
+  top: 55%;
+  right: 2rem;
   color: var(--color_primary);
   z-index: 1;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {

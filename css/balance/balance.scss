@@ -36,43 +36,43 @@
     height: 100%;
     position: relative;
 
-    &.green {
-      background-color: rgba(0, 156, 25, 0.1);
+    // &.green {
+    //   background-color: rgba(0, 156, 25, 0.1);
 
-      .icons {
-        color: rgba(0, 156, 25, 1);
-        height: 14rem;
-        width: 14rem;
+    //   .icons {
+    //     color: rgba(0, 156, 25, 1);
+    //     height: 10rem;
+    //     width: 10rem;
 
-        @media screen and (max-width:767px) {
-          height: 10rem;
-          width: 10rem;
-        }
-      }
-    }
+    //     @media screen and (max-width:767px) {
+    //       height: 8rem;
+    //       width: 8rem;
+    //     }
+    //   }
+    // }
 
-    &.danger {
-      background-color: rgba(184, 0, 0, 0.1);
+    // &.danger {
+    //   background-color: rgba(184, 0, 0, 0.1);
 
-      .icons {
-        color: rgba(184, 0, 0, 1);
-        height: 10rem;
-        width: 10rem;
+    //   .icons {
+    //     color: rgba(184, 0, 0, 1);
+    //     height: 8rem;
+    //     width: 8rem;
         
-        @media screen and (max-width:767px) {
-          height: 7rem;
-          width: 7rem;
-        }
-      }
-    }
+    //     @media screen and (max-width:767px) {
+    //       height: 6rem;
+    //       width: 6rem;
+    //     }
+    //   }
+    // }
 
     .icons {
       position: absolute;
-      top: 50%;
-      right: 1rem;
+      top: 55%;
+      right: 2rem;
       color: var(--color_primary);
       z-index: 1;
-
+      display: none;
 
     @media screen and (max-width:991px) {
       top: 40%;

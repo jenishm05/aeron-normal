@@ -4,8 +4,6 @@
   height: 100vh;
   background-color: var(--color_white);
   border-right: 1px solid var(border_color);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .sidebar_menu .logo {

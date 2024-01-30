@@ -1,15 +1,11 @@
 @import url("../header/header.css");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-@import url("../app.css");
-@import url("../index.css");
 .sidebar_menu {
   max-width: 10rem;
   width: 100%;
   height: 100vh;
   background-color: var(--color_white);
   border-right: 1px solid var(border_color);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .sidebar_menu .logo {
@@ -493,7 +489,7 @@
   .earn_validate svg {
     height: 4rem;
     width: 4rem;
-    padding: 0.8em;
+    padding: 0.8rem;
   }
 }
 
@@ -737,46 +733,13 @@
   position: relative;
 }
 
-.balanceCard_box .card_simple.green {
-  background-color: rgba(0, 156, 25, 0.1);
-}
-
-.balanceCard_box .card_simple.green .icons {
-  color: #009c19;
-  height: 14rem;
-  width: 14rem;
-}
-
-@media screen and (max-width: 767px) {
-  .balanceCard_box .card_simple.green .icons {
-    height: 10rem;
-    width: 10rem;
-  }
-}
-
-.balanceCard_box .card_simple.danger {
-  background-color: rgba(184, 0, 0, 0.1);
-}
-
-.balanceCard_box .card_simple.danger .icons {
-  color: #b80000;
-  height: 10rem;
-  width: 10rem;
-}
-
-@media screen and (max-width: 767px) {
-  .balanceCard_box .card_simple.danger .icons {
-    height: 7rem;
-    width: 7rem;
-  }
-}
-
 .balanceCard_box .card_simple .icons {
   position: absolute;
-  top: 50%;
-  right: 1rem;
+  top: 55%;
+  right: 2rem;
   color: var(--color_primary);
   z-index: 1;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -2431,6 +2394,19 @@ li {
   padding: 0;
 }
 
+.page_title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color_dark);
+  padding: 0.5rem 0;
+}
+
+@media screen and (min-width: 992px) {
+  .page_title {
+    display: none;
+  }
+}
+
 button,
 .btn {
   border: none;
@@ -2544,13 +2520,19 @@ button.btn_action_boost svg {
           justify-content: center;
   font-size: 1.8rem;
   color: var(--color_primary);
-  font-weight: 600;
+  font-weight: 700;
   padding: 1.2rem;
   background-color: var(--color_white);
   border-radius: 0.5rem;
   border: 1px solid var(--border_color);
   border-bottom: none;
   width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .assets_title {
+    font-size: 1.6rem;
+  }
 }
 
 .tableResponsive {
@@ -3301,114 +3283,6 @@ label.label.attachFile svg {
   color: var(--color_white) !important;
 }
 
-:root {
-  --color_primary: #01349b;
-  --color_gradientprimary: linear-gradient(to bottom right, #01349b 0%, rgba(1, 52, 155, 0.6) 100%);
-  --color_lightprimary: rgba(1, 52, 155, 0.08);
-  --color_darkprimary: #093388;
-  --shadow_primary: rgba(98, 89, 202, 0.2);
-  --color_dark: #444444;
-  --color_secondary: #8994A3;
-  --color_light: #f1f1f1;
-  --color_grey: #DEE3EA;
-  --color_dots: #C5CBD3;
-  --color_white: #FFFFFF;
-  --border_color: #ebeef1;
-}
-
-.f-primary {
-  color: var(--color_primary);
-}
-
-.f-lightprimary {
-  color: var(--color_lightprimary);
-}
-
-.f-secondary {
-  color: var(--color_secondary);
-}
-
-.f-secondary {
-  color: var(--color_secondary);
-}
-
-.f-light {
-  color: var(--color_light);
-}
-
-.f-grey {
-  color: var(--color_grey);
-}
-
-.f-dots {
-  color: var(--color_dots);
-}
-
-.f-white {
-  color: var(--color_white);
-}
-
-.bg-primary {
-  background-color: var(--color_primary);
-}
-
-.bg-lightprimary {
-  background-color: var(--color_lightprimary);
-}
-
-.bg-secondary {
-  background-color: var(--color_secondary);
-}
-
-.bg-secondary {
-  background-color: var(--color_secondary);
-}
-
-.bg-light {
-  background-color: var(--color_light);
-}
-
-.bg-grey {
-  background-color: var(--color_grey);
-}
-
-.bg-dots {
-  background-color: var(--color_dots);
-}
-
-.bg-white {
-  background-color: var(--color_white);
-}
-
-.fw-400 {
-  font-weight: 400 !important;
-}
-
-.fw-500 {
-  font-weight: 500 !important;
-}
-
-.fw-600 {
-  font-weight: 600 !important;
-}
-
-.fw-700 {
-  font-weight: 700 !important;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-  display: block;
-}
-
 .header_body {
   min-height: 100vh;
   width: 100%;
@@ -3749,6 +3623,10 @@ label.label.attachFile svg {
   padding: 1rem;
 }
 
+.table_menu .btn-secondary::after {
+  display: none;
+}
+
 .table_menu .btn-secondary svg {
   color: var(--color_primary);
   height: 100%;
@@ -3764,6 +3642,7 @@ label.label.attachFile svg {
 .table_menu .dropdown-menu li a {
   font-size: 1.3rem;
   padding: 0.6rem 1.5rem;
+  cursor: pointer;
 }
 
 .table_menu .dropdown-menu li a svg {
