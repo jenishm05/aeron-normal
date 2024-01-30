@@ -1,5 +1,5 @@
 @import url("../header/header.css");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("../app.css");
 @import url("../index.css");
 .sidebar_menu {
@@ -838,7 +838,7 @@
 .balanceCard_box .page_title span {
   font-size: 2rem;
   color: var(--color_white);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .balanceCard_box .page_title span.dark {
@@ -911,7 +911,7 @@
 
 @media screen and (max-width: 575px) {
   .balanceCard_box h4.amount {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -2414,7 +2414,9 @@ body {
 }
 
 body * {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 a {
@@ -2696,13 +2698,6 @@ table.table tbody tr td.no_data_td p {
 
 table.table tbody tr:hover td {
   background-color: var(--color_lightprimary);
-}
-
-.page_title {
-  font-size: 1.6rem;
-  color: var(--color_dark);
-  font-weight: 600;
-  margin: 1rem 0;
 }
 
 label.label {

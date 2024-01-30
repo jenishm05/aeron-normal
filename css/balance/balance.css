@@ -141,7 +141,7 @@
 .balanceCard_box .page_title span {
   font-size: 2rem;
   color: var(--color_white);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .balanceCard_box .page_title span.dark {
@@ -214,7 +214,7 @@
 
 @media screen and (max-width: 575px) {
   .balanceCard_box h4.amount {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 

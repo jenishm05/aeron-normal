@@ -8,7 +8,9 @@
 @import "../faq//faq.scss";
 @import "../drawer/drawer.scss";
 @import "../variables/variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 * {
   margin: 0;
@@ -27,7 +29,9 @@ body {
   background-color: #f2f3f9;
 
   * {
-    font-family: "Inter", sans-serif !important;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
   }
 }
 
@@ -306,13 +310,6 @@ table.table {
   }
 }
 
-.page_title{
-  font-size: 1.6rem;
-  color: var(--color_dark);
-  font-weight: 600;
-  margin: 1rem 0;
-}
-
 label.label {
   margin-bottom: 1rem;
   display: block;
@@ -352,7 +349,7 @@ label.label {
   padding: 0.7rem 1.4rem;
   outline: none;
 
-  &.transparent{
+  &.transparent {
     background-color: transparent;
     border: none;
   }

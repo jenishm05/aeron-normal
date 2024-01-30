@@ -116,7 +116,7 @@
     span {
       font-size: 2rem;
       color: var(--color_white);
-      font-weight: 600;
+      font-weight: 800;
 
       &.dark {
         color: var(--color_dark);
@@ -176,7 +176,7 @@
     }
 
     @media screen and (max-width: 575px) {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
 
