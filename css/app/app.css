@@ -722,7 +722,7 @@
 
 @media screen and (max-width: 991px) {
   .balanceCard_box .card_box {
-    height: 14rem;
+    height: auto;
     padding: 2rem;
   }
 }
@@ -747,6 +747,13 @@
   width: 14rem;
 }
 
+@media screen and (max-width: 767px) {
+  .balanceCard_box .card_simple.green .icons {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
 .balanceCard_box .card_simple.danger {
   background-color: rgba(184, 0, 0, 0.1);
 }
@@ -757,17 +764,36 @@
   width: 10rem;
 }
 
+@media screen and (max-width: 767px) {
+  .balanceCard_box .card_simple.danger .icons {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
 .balanceCard_box .card_simple .icons {
   position: absolute;
-  top: 80%;
+  top: 50%;
   right: 1rem;
   color: var(--color_primary);
   z-index: 1;
 }
 
 @media screen and (max-width: 991px) {
+  .balanceCard_box .card_simple .icons {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .balanceCard_box .card_simple .icons {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .balanceCard_box .card_simple {
-    height: 12rem;
+    height: auto;
     padding: 2rem;
   }
 }
@@ -2670,6 +2696,13 @@ table.table tbody tr td.no_data_td p {
 
 table.table tbody tr:hover td {
   background-color: var(--color_lightprimary);
+}
+
+.page_title {
+  font-size: 1.6rem;
+  color: var(--color_dark);
+  font-weight: 600;
+  margin: 1rem 0;
 }
 
 label.label {
