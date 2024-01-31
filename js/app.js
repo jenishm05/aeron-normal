@@ -71,3 +71,9 @@ $('#handleConform').click(function () {
 	$('#afterConform').removeClass('d-none')
 	$(this).text('Confirm')
 })
+
+$('#handleRedeem').click(function () {
+	$('#beforeRedeem').addClass('d-none')
+	$('#afterRedeem').removeClass('d-none')
+	$(this).text('Confirm')
+})

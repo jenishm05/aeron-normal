@@ -260,7 +260,7 @@
                 </div>
               </div>
               <div class="col-lg-4 mb-4 mb-lg-0">
-                <div class="card_simple danger">
+                <div class="card_simple green">
                   <div class="page_title">
                     <span class="dark">Active Earnings</span>
 
@@ -510,7 +510,7 @@
                             <p class="tag_line">Both passwords must match</p>
                           </div>
 
-                          <button class="boost_btn primary">Submit</button>
+                          <button class="boost_btn primary" data-bs-toggle="modal" data-bs-target="#ForgotpassModal">Submit</button>
                           <div class="alert alert-warning d-flex align-items-center fs-5" role="alert">
                             <!-- <div class="icon">
                               <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ReportProblemOutlinedIcon">
@@ -646,6 +646,32 @@
               </div>
             </div>
 
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="ForgotpassModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal_header">
+              <h5>Change password</h5>
+              <button class="modal_close" onclick="handleClose()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="modal_body">
+              <h5 class="conform_small">Are you sure</h5>
+              <h6 class="conform_text">Do you want to change password</h6>
+            </div>
+
+            <div class="modal_footer">
+              <button id="handleConform" class="boost_btn primary w-100">Conform</button>
+            </div>
           </div>
         </div>
       </div>

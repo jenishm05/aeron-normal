@@ -105,9 +105,18 @@
           </div>
         </div>
 
-        <!-- 2 -->
+        <!-- 1 -->
         <div class="tab-pane fade w-100" id="profile-tab-pane">
-          <div class="withdraw_amount" id="withdraw">
+          <div id="beforeWithdraw">
+            <h5 class="conform_small">Are you sure</h5>
+            <h6 class="conform_text">Do you want to procced</h6>
+
+            <button class="boost_btn primary w-100 nextProcessConform">
+              Next
+            </button>
+          </div>
+
+          <div class="withdraw_amount d-none" id="withdraw">
             <p class="sub_title">Current balance: 5,826.11 USDT</p>
 
             <div class="address_code bn">
@@ -126,9 +135,10 @@
                 <p class="sub_title">Minimum withdrawal amount: 20 USDT</p>
               </div>
 
-              <button class="boost_btn primary w-100 nextProcess">
-                Next
-              </button>
+              <div class="d-flex align-items-center">
+                <button class="boost_btn grey w-50 nextProcess">Cancle</button>
+                <button class="boost_btn primary w-50 nextProcess">Next</button>
+              </div>
             </div>
           </div>
 
@@ -147,14 +157,9 @@
 
               <div class="d-flex align-items-center">
                 <div class="w-50 px-1">
-                  <button class="boost_btn grey nextProcess w-100">
-                    Back
-                  </button>
+                  <button class="boost_btn grey nextProcess w-100">Back</button>
                 </div>
-                <div class="w-50 px-1">
-                  <button class="boost_btn primary w-100 nextProcess2">
-                    Next
-                  </button>
+                <div class="w-50 px-1"><button class="boost_btn primary w-100 nextProcess2">Next</button>
                 </div>
               </div>
             </div>
@@ -281,7 +286,13 @@
 
         <!-- 3 -->
         <div class="tab-pane fade w-100" id="contact-tab-pane">
-          <div class="mt-3" id="returnsend">
+          <div id="beforeSend" class="mt-3">
+            <h5 class="conform_small">Are you sure</h5>
+            <h6 class="conform_text">Do you want to procced</h6>
+            <button class="boost_btn primary w-100 confirmationSend">Next</button>
+          </div>
+
+          <div class="mt-3 d-none" id="returnsend">
             <!-- Wallet Address Enter -->
             <p class="sub_title">Wallet Address</p>
             <input type="text" placeholder="Enter Wallet Address" class="input_filed w-100" />
@@ -296,9 +307,11 @@
                 <option value="4">USD</option>
               </select>
             </div>
-            <button class="boost_btn primary w-100 confirmationSend">
-              send
-            </button>
+
+            <div class="d-flex align-items-center">
+              <button class="boost_btn grey w-50 confirmationSend">Cancel</button>
+              <button class="boost_btn primary w-50 sendNext">send</button>
+            </div>
           </div>
 
           <div class="withdraw_amount d-none" id="send">
@@ -609,69 +622,67 @@
             </button>
           </div>
           <div class="modal_body">
-            <div style="margin: 0 0.5rem; margin-top: 1px">
+            <div id="beforeAddDeposit">
+              <h5 class="conform_small">Are you sure</h5>
+              <h6 class="conform_text">Do you want to procced</h6>
+            </div>
+            <div id="depositBox" class="d-none">
               <span class="f-secondary fw-500" style="font-size: 14px">Choose your preferred currency</span>
+              <label for="symbol1" class="symbol_list">
+                <div class="drawer_select_item">
+                  <div class="select_symbol">
+                    <img src="./images/avax.svg" class="symbol" />
+                    <div class="symbol_name">
+                      <p>Avax</p>
+                      <span>USDT</span>
+                    </div>
+                  </div>
+
+                  <div class="symbol_price">
+                    <input class="form-check-input" checked type="radio" name="symbols" id="symbol1">
+                  </div>
+                </div>
+              </label>
+              <label for="symbol2" class="symbol_list">
+                <div class="drawer_select_item">
+                  <div class="select_symbol">
+                    <img src="./images/bnb.svg" class="symbol" />
+                    <div class="symbol_name">
+                      <p>BNB</p>
+                      <span>USDT</span>
+                    </div>
+                  </div>
+
+                  <div class="symbol_price">
+                    <input class="form-check-input" type="radio" name="symbols" id="symbol2">
+                  </div>
+                </div>
+              </label>
+              <label for="symbol3" class="symbol_list">
+                <div class="drawer_select_item">
+                  <div class="select_symbol">
+                    <img src="./images/btc.svg" class="symbol" />
+                    <div class="symbol_name">
+                      <p>BTC</p>
+                      <span>USDT</span>
+                    </div>
+                  </div>
+
+                  <div class="symbol_price">
+                    <input class="form-check-input" type="radio" name="symbols" id="symbol3">
+                  </div>
+                </div>
+              </label>
             </div>
 
-            <label for="symbol1" class="symbol_list">
-              <div class="drawer_select_item">
-                <div class="select_symbol">
-                  <img src="./images/avax.svg" class="symbol" />
-                  <div class="symbol_name">
-                    <p>Avax</p>
-                    <span>USDT</span>
-                  </div>
-                </div>
-
-                <div class="symbol_price">
-                  <input class="form-check-input" checked type="radio" name="symbols" id="symbol1">
-                </div>
-              </div>
-            </label>
-            <label for="symbol2" class="symbol_list">
-              <div class="drawer_select_item">
-                <div class="select_symbol">
-                  <img src="./images/bnb.svg" class="symbol" />
-                  <div class="symbol_name">
-                    <p>BNB</p>
-                    <span>USDT</span>
-                  </div>
-                </div>
-
-                <div class="symbol_price">
-                  <input class="form-check-input" type="radio" name="symbols" id="symbol2">
-                </div>
-              </div>
-            </label>
-            <label for="symbol3" class="symbol_list">
-              <div class="drawer_select_item">
-                <div class="select_symbol">
-                  <img src="./images/btc.svg" class="symbol" />
-                  <div class="symbol_name">
-                    <p>BTC</p>
-                    <span>USDT</span>
-                  </div>
-                </div>
-
-                <div class="symbol_price">
-                  <input class="form-check-input" type="radio" name="symbols" id="symbol3">
-                </div>
-              </div>
-            </label>
           </div>
           <div class="modal_footer d-flex align-content-center justify-content-end">
-            <button class="boost_btn oulined_primary w-50" data-bs-dismiss="modal">
-              Cancel
-            </button>
-            <button class="boost_btn primary w-50" data-bs-dismiss="modal">
-              Confirm
-            </button>
+            <!-- <button class="boost_btn oulined_primary w-50" data-bs-dismiss="modal">Cancel</button> -->
+            <button class="boost_btn primary w-100" id="handleDeposit">Next</button>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script> -->
 
     <script>
       $("#faqsBox").load("./faq.html");
@@ -711,13 +722,27 @@
         }
       });
 
+      $(".nextProcessConform").click(function () {
+        if ($("#withdraw").hasClass("d-none")) {
+          $("#withdraw").removeClass("d-none");
+          $("#beforeWithdraw").addClass("d-none");
+          $("#walletDetails").addClass("d-none");
+        } else {
+          $("#withdraw").addClass("d-none");
+          $("#beforeWithdraw").removeClass("d-none");
+          $("#walletDetails").removeClass("d-none");
+        }
+      });
+
       $(".nextProcess2").click(function () {
         if ($("#withdrawNext").hasClass("d-none")) {
           $("#walletDetails").addClass("d-none");
           $("#withdrawNext").removeClass("d-none");
+          $("#beforeWithdraw").RemoveClass("d-none");
         } else {
           $("#walletDetails").removeClass("d-none");
           $("#withdrawNext").addClass("d-none");
+          $("#beforeWithdraw").addClass("d-none");
         }
       });
 
@@ -728,12 +753,26 @@
 
       //   ======= For send
       $(".confirmationSend").click(function () {
+        if ($("#returnsend").hasClass("d-none")) {
+          $("#send").addClass("d-none");
+          $("#returnsend").removeClass("d-none");
+          $('#beforeSend').addClass('d-none')
+        } else {
+          $("#send").addClass("d-none");
+          $("#returnsend").addClass("d-none");
+          $('#beforeSend').removeClass('d-none')
+        }
+      });
+
+      $(".sendNext").click(function () {
         if ($("#send").hasClass("d-none")) {
           $("#send").removeClass("d-none");
           $("#returnsend").addClass("d-none");
+          $('#beforeSend').addClass('d-none')
         } else {
           $("#send").addClass("d-none");
-          $("#returnsend").removeClass("d-none");
+          $("#returnsend").addClass("d-none");
+          $('#beforeSend').removeClass('d-none')
         }
       });
 
@@ -747,6 +786,12 @@
           $("#exchange").removeClass("d-none");
         }
       });
+
+      $('#handleDeposit').click(function () {
+        $('#beforeAddDeposit').addClass('d-none')
+        $('#depositBox').removeClass('d-none')
+        $(this).text('Confirm')
+      })
     </script>
   </body>
 

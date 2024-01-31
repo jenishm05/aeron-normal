@@ -2851,6 +2851,18 @@ label.label.attachFile svg {
   font-size: 1.8rem;
 }
 
+h5.conform_small {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--color_dark);
+}
+
+h6.conform_text {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color_secondary);
+}
+
 .modal_body {
   padding: 1.2rem;
 }
@@ -2867,18 +2879,6 @@ label.label.attachFile svg {
   height: 100%;
   width: 100%;
   color: var(--color_primary);
-}
-
-.modal_body h5.conform_small {
-  font-size: 1.6rem;
-  text-align: center;
-  color: var(--color_dark);
-}
-
-.modal_body h6.conform_text {
-  font-size: 1.8rem;
-  text-align: center;
-  color: var(--color_secondary);
 }
 
 .modal_body button.copy_address {
@@ -3717,6 +3717,7 @@ label.label.attachFile svg {
   font-size: 1.3rem;
   padding: 0.6rem 1.5rem;
   cursor: pointer;
+  border-bottom: 1px solid var(--border_color);
 }
 
 .table_menu .dropdown-menu li a svg {
