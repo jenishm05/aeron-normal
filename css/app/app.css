@@ -1,5 +1,5 @@
 @import url("../header/header.css");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=Exchange");
 .sidebar_menu {
   max-width: 10rem;
   width: 100%;
@@ -734,6 +734,23 @@
 
 .balanceCard_box .card_simple svg#visual {
   display: none;
+}
+
+.balanceCard_box .card_simple.green {
+  background-color: rgba(0, 156, 25, 0.1);
+}
+
+.balanceCard_box .card_simple.green .icons {
+  color: #009c19;
+  height: 10rem;
+  width: 10rem;
+}
+
+@media screen and (max-width: 767px) {
+  .balanceCard_box .card_simple.green .icons {
+    height: 8rem;
+    width: 8rem;
+  }
 }
 
 .balanceCard_box .card_simple .icons {
@@ -2385,6 +2402,10 @@ body * {
   font-style: normal;
 }
 
+.modal-backdrop {
+  z-index: 1044 !important;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -2813,13 +2834,14 @@ label.label.attachFile svg {
 
 .modal_header h5 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .modal_header button.modal_close {
   min-width: 3rem;
-  height: 3rem;
+  height: 3.5rem;
   padding: 0.6rem;
   background-color: var(--color_lightprimary);
   color: var(--color_primary);
@@ -2831,6 +2853,32 @@ label.label.attachFile svg {
 
 .modal_body {
   padding: 1.2rem;
+}
+
+.modal_body .conform_icon {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  color: var(--color_primary);
+  margin: 2rem auto;
+}
+
+.modal_body .conform_icon svg {
+  height: 100%;
+  width: 100%;
+  color: var(--color_primary);
+}
+
+.modal_body h5.conform_small {
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--color_dark);
+}
+
+.modal_body h6.conform_text {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color_secondary);
 }
 
 .modal_body button.copy_address {
@@ -3149,14 +3197,16 @@ label.label.attachFile svg {
   color: var(--color_white);
 }
 
-.modal_body .tabs .symbol_list {
+.symbol_list {
   max-height: 34rem;
   height: 100%;
+  width: 100%;
   overflow-y: auto;
+  margin-top: 1rem;
   padding-right: 1rem;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item {
+.symbol_list .drawer_select_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3168,10 +3218,9 @@ label.label.attachFile svg {
           justify-content: space-between;
   width: 100%;
   border: 1px solid var(--color_grey);
-  margin-bottom: 1rem;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .select_symbol {
+.symbol_list .drawer_select_item .select_symbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3181,26 +3230,26 @@ label.label.attachFile svg {
   width: 100%;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .select_symbol .symbol {
-  max-height: 3rem;
-  max-width: 3rem;
+.symbol_list .drawer_select_item .select_symbol .symbol {
+  max-height: 2.2rem;
+  max-width: 2.2rem;
   height: 100%;
   width: 100%;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .select_symbol .symbol_name {
+.symbol_list .drawer_select_item .select_symbol .symbol_name {
   display: block;
   margin-left: 1rem;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .select_symbol .symbol_name p {
-  font-size: 1.4rem;
+.symbol_list .drawer_select_item .select_symbol .symbol_name p {
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--color_primary);
   text-transform: capitalize;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .select_symbol .symbol_name span {
+.symbol_list .drawer_select_item .select_symbol .symbol_name span {
   font-size: 1.2rem;
   color: var(--color_secondary);
   font-weight: 400;
@@ -3208,19 +3257,32 @@ label.label.attachFile svg {
   text-transform: uppercase;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .symbol_price {
+.symbol_list .drawer_select_item .symbol_price {
   display: block;
   text-align: right;
   width: 100%;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .symbol_price p {
+.symbol_list .drawer_select_item .symbol_price input.form-check-input {
+  height: 2.4rem;
+  width: 2.4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: var(--color_primary);
+}
+
+.symbol_list .drawer_select_item .symbol_price input.form-check-input:checked {
+  background-color: var(--color_primary);
+  border-color: var(--color_primary);
+}
+
+.symbol_list .drawer_select_item .symbol_price p {
   font-size: 1.3rem;
   color: var(--color_dark);
   font-weight: 500;
 }
 
-.modal_body .tabs .symbol_list .drawer_select_item .symbol_price span {
+.symbol_list .drawer_select_item .symbol_price span {
   font-size: 1.2rem;
   color: var(--color_secondary);
   font-weight: 400;
