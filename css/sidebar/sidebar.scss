@@ -202,6 +202,7 @@
         transform: translate(-50%, 0%);
         padding: 0.5rem;
         z-index: 25;
+        margin-top: -1rem;
 
         @media screen and (min-width:992px) {
           display: none;
@@ -291,7 +292,8 @@
     z-index: 50;
     transition: 0.3s;
     padding: 1rem;
+    padding-top: 1.5rem;
     border-radius: 1rem 1rem 0 0;
-    max-height: 7rem;
+    max-height: 8rem;
   }
 }

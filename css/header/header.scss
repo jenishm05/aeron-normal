@@ -41,12 +41,18 @@
     align-items: center;
     justify-content: right;
 
-    .deposit_btn{
+    .deposit_btn {
       background-color: var(--color_primary);
       padding: 0.8rem 2rem;
       background-color: var(--color_primary);
       color: var(--color_white);
       border-radius: 0.6rem;
+
+
+      @media screen and (max-width:991px) {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.3rem;
+      }
     }
 
     .dropdown {
@@ -287,7 +293,7 @@ button.boost_menuClose {
   color: var(--color_primary);
   display: none;
 
-  svg{
+  svg {
     height: 100%;
     width: 100%;
   }

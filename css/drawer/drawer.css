@@ -51,7 +51,7 @@
 }
 
 .drawer_boost .tab_drawer li {
-  width: 25%;
+  width: 50%;
 }
 
 .drawer_boost .tab_drawer li button {
@@ -78,129 +78,6 @@
 .drawer_boost .tab_drawer li button.active {
   background: var(--color_primary);
   color: var(--color_white);
-}
-
-.drawer_boost h3.title_big {
-  font-size: 2.6rem;
-  color: var(--color_primary);
-  font-weight: 600;
-  margin-top: 1.5rem;
-}
-
-.drawer_boost h4.title {
-  font-size: 2rem;
-  color: var(--color_primary);
-  font-weight: 600;
-  margin-top: 1.5rem;
-}
-
-.drawer_boost p.sub_title {
-  font-size: 1.4rem;
-  color: var(--color_secondary);
-  font-weight: 500;
-  margin: 0.6rem 0;
-}
-
-.drawer_boost .exchange_box {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 1.5rem;
-  background-color: var(--color_lightprimary);
-}
-
-.drawer_boost .exchange_box.from {
-  position: relative;
-  margin-bottom: 10rem;
-}
-
-.drawer_boost .exchange_box.from:after {
-  content: '';
-  position: absolute;
-  bottom: -40%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 4rem;
-  width: 1px;
-  background-color: var(--color_secondary);
-  z-index: -1;
-}
-
-.drawer_boost .exchange_box.to {
-  position: relative;
-  margin-top: 10rem;
-}
-
-.drawer_boost .exchange_box.to:after {
-  content: '';
-  position: absolute;
-  top: -40%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 4rem;
-  width: 1px;
-  background-color: var(--color_secondary);
-  z-index: -1;
-}
-
-.drawer_boost .exchange_box .fromTo {
-  padding: 0 0.5rem;
-  display: block;
-  text-align: left;
-}
-
-.drawer_boost .exchange_box .fromTo h5.price {
-  font-size: 2.6rem;
-  font-weight: 600;
-  color: var(--color_primary);
-  margin-top: 0.8rem;
-}
-
-.drawer_boost .exchange_box .balance_symbol {
-  padding: 0 0.5rem;
-  display: block;
-  text-align: right;
-}
-
-.drawer_boost button.exchage_btn {
-  min-width: 4rem;
-  width: 4rem;
-  height: 4rem;
-  min-height: 4rem;
-  border-radius: 50%;
-  padding: 0.5rem;
-  margin: 0 auto;
-  background-color: var(--color_primary);
-  color: var(--color_white);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.drawer_boost button.exchage_btn svg {
-  height: 2rem;
 }
 
 .drawer_boost .crypto_deposit li {
@@ -498,7 +375,7 @@
           justify-content: space-between;
   border: 1px solid var(--color_grey);
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
 }
 
@@ -545,36 +422,6 @@
   max-width: 26rem;
 }
 
-.drawer_boost .address_code .summary_list {
-  margin-top: 0.5rem;
-}
-
-.drawer_boost .address_code .summary_list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0.5rem 0;
-}
-
-.drawer_boost .address_code .summary_list li p {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--color_secondary);
-  margin-bottom: 0;
-}
-
-.drawer_boost .address_code .summary_list li span {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: var(--color_primary);
-}
-
 .drawer_boost .address_code button.edit_address {
   min-width: 3rem;
   width: 3rem;
@@ -604,7 +451,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.6rem;
   cursor: pointer;
 }
