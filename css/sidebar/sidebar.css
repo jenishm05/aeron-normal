@@ -284,6 +284,7 @@
 
 .sidebar_menu.open li.menu_item a.active {
   background: var(--color_primary);
+  background-image: radial-gradient(90deg, #0D3772, #042048);
   color: var(--color_white);
   -webkit-box-shadow: 0 7px 12px 0 var(--color_lightprimary);
           box-shadow: 0 7px 12px 0 var(--color_lightprimary);

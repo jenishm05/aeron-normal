@@ -185,8 +185,28 @@
 .balanceCard_box h4.amount {
   font-size: 2.4rem;
   font-weight: 600;
-  color: var(--color_dark);
-  margin-top: 4rem;
+  color: var(--color_primary);
+  margin-top: 2rem;
+}
+
+.balanceCard_box h4.amount span {
+  color: var(--color_primary);
+  font-weight: 700;
+}
+
+.balanceCard_box h4.amount span:first-child {
+  font-size: 4rem;
+}
+
+.balanceCard_box h4.amount span:last-child {
+  font-size: 2.8rem;
+}
+
+.balanceCard_box h4.amount.filled {
+  background-color: var(--color_primary);
+  padding: 0.8rem 2rem;
+  border-radius: 0.6rem;
+  color: var(--color_white);
 }
 
 .balanceCard_box h4.amount.dark {
@@ -357,148 +377,34 @@
   }
 }
 
-.owl_card_slider {
-  margin-top: 1.5rem;
-}
-
-.owl_card_slider .owl_getCard {
-  display: block;
-}
-
-.owl_card_slider .owl-nav {
-  display: none;
-}
-
-.owl_card_slider .owl-controls .owl-pagination {
+.form-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  margin-right: 1rem;
+  margin-top: 3rem;
 }
 
-.owl_card_slider .owl-controls .owl-pagination .owl-page {
-  margin-top: 1rem;
-  text-align: left;
-}
-
-.owl_card_slider .owl-controls .owl-pagination .owl-page span {
-  background-color: var(--color_dots) !important;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  margin: 0.3rem !important;
-}
-
-.owl_card_slider .owl-controls .owl-pagination .owl-page.active span {
-  background-color: var(--color_primary) !important;
-  width: 4rem;
-}
-
-.owl_card_slider .owl-item {
-  min-height: 20rem !important;
-  margin-right: 1.5rem;
-}
-
-.owl_card_slider .owl-item .item {
-  min-height: 20rem !important;
-}
-
-.owl_card_slider .owl-item .item .slider_card {
-  border-radius: 1rem;
-  padding: 1.5rem;
-  height: 100%;
-  min-height: 20rem !important;
-  text-align: center;
-  background-color: var(--color_white);
-  border: 1px solid var(--border_color);
-}
-
-.owl_card_slider .owl-item .item .slider_card h5 {
-  font-size: 1.6rem;
+.form-check input.form-check-input {
+  height: 2 rem;
+  width: 2 rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   color: var(--color_primary);
-  font-weight: 500;
+  border: 1px solid var(--color_secondary);
 }
 
-.owl_card_slider .owl-item .item .slider_card .card_symbol {
-  height: 4.5rem;
-  width: 4.5rem;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.2rem;
-  margin: 0 auto;
-}
-
-.owl_card_slider .owl-item .item .slider_card .card_symbol img {
-  height: 100%;
-  width: 100%;
-}
-
-.owl_card_slider .owl-item .item .slider_card p.symbol_name {
-  font-size: 2rem;
-  color: var(--color_dark);
-  margin-top: 1rem;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.owl_card_slider .owl-item .item .slider_card .slider_card_svg {
-  text-align: right;
-  height: 10rem;
-  width: 10rem;
-  padding: 0.6rem;
-  margin: 0 auto;
-  opacity: 0.4;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-.owl_card_slider .owl-item .item .slider_card .slider_card_svg svg,
-.owl_card_slider .owl-item .item .slider_card .slider_card_svg img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.owl_card_slider .owl-item .item .slider_card button.refer_btn {
+.form-check input.form-check-input:checked {
   background-color: var(--color_primary);
-  color: var(--color_white);
-  padding: 0.8rem 2.2rem;
-  font-size: 1.2rem;
-  margin-top: 2rem;
+  border-color: var(--color_primary);
 }
 
-.owl_card_slider .owl-item .item .slider_card .slider_card_content p {
+.form-check .form-check-label {
   font-size: 1.3rem;
-  color: var(--color_secondary);
-  margin-bottom: 0.5rem;
-}
-
-.owl_card_slider .owl-item .item .slider_card .slider_card_content h6 {
-  font-size: 2.2rem;
-  color: var(--color_primary);
-  font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.owl_card_slider .owl-item .item .slider_card .slider_card_content span {
-  font-size: 1.2rem;
-  color: var(--color_secondary);
-  margin-left: 0.5rem;
+  color: var(--color_dark);
+  padding-left: 1rem;
 }
 /*# sourceMappingURL=balance.css.map */

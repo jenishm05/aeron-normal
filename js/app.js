@@ -77,3 +77,120 @@ $('#handleRedeem').click(function () {
 	$('#afterRedeem').removeClass('d-none')
 	$(this).text('Confirm')
 })
+
+
+const earnCardsArray = [
+	{
+		icons: '../images/tusd.svg',
+		name: 'USDT',
+
+		cards: [
+			{
+				bg: 'linear-gradient(180deg, #168D69, #07694B)',
+				title: 'Earn+ 365',
+				percentage: 8
+			},
+			{
+				bg: 'linear-gradient(180deg, #168D69, #07694B)',
+				title: 'Earn+',
+				percentage: 10
+			},
+			{
+				bg: 'linear-gradient(180deg, #168D69, #07694B)',
+				title: 'Flexibile',
+				percentage: 7
+			},
+		]
+	},
+	{
+		icons: '../images/usdt.svg',
+		name: 'TUSD',
+
+		cards: [
+			{
+				bg: 'linear-gradient(180deg, #3F4295, #232678)',
+				title: 'Earn+ 365',
+				percentage: 8
+			},
+			{
+				bg: 'linear-gradient(180deg, #3F4295, #232678)',
+				title: 'Earn+',
+				percentage: 10
+			},
+			{
+				bg: 'linear-gradient(180deg, #3F4295, #232678)',
+				title: 'Flexibile',
+				percentage: 9
+			},
+		]
+	},
+	{
+		icons: '../images/eth.svg',
+		name: 'ETH',
+
+		cards: [
+			{
+				bg: 'linear-gradient(180deg, #4763CC, #2C45A3)',
+				title: 'Earn+ 365',
+				percentage: 8
+			},
+			{
+				bg: 'linear-gradient(180deg, #4763CC, #2C45A3)',
+				title: 'Earn+',
+				percentage: 10
+			},
+		]
+	},
+	{
+		icons: '../images/btc.svg',
+		name: 'BTC',
+
+		cards: [
+			{
+				bg: 'linear-gradient(180deg, #E18E28, #B4690F)',
+				title: 'Earn+ 365',
+				percentage: 8
+			},
+			{
+				bg: 'linear-gradient(180deg, #E18E28, #B4690F)',
+				title: 'Earn+',
+				percentage: 10
+			},
+		]
+	},
+
+	{
+		icons: '../images/dai.svg',
+		name: 'DAI',
+
+		cards: [
+			{
+				bg: 'linear-gradient(180deg, #DEAA37, #BF9029)',
+				title: 'Earn+ 365',
+				percentage: 8
+			},
+			{
+				bg: 'linear-gradient(180deg, #DEAA37, #BF9029)',
+				title: 'Earn+',
+				percentage: 10
+			},
+		]
+	},
+	{
+		icons: '../images/usdc.svg',
+		name: 'USDC',
+
+		cards: [
+			{
+				bg: 'linear-gradient(180deg, #4377C8, #315FA5)',
+				title: 'Earn+ 365',
+				percentage: 8
+			},
+			{
+				bg: 'linear-gradient(180deg, #4377C8, #315FA5)',
+				title: 'Earn+',
+				percentage: 10
+			},
+		]
+	},
+]

@@ -1,5 +1,6 @@
 .drawer_boost {
   width: auto !important;
+  background-color: #062148 !important;
 }
 
 .drawer_boost .offcanvas-body {
@@ -28,13 +29,13 @@
 }
 
 .drawer_boost button.close_drawer {
-  background-color: var(--color_lightprimary);
+  background-color: transparent;
   min-width: 3rem;
-  min-height: 3rem;
+  min-height: 2.8rem;
   max-width: 3rem;
   border-radius: 0.5rem;
   padding: 0.6rem;
-  color: var(--color_primary);
+  color: var(--color_white);
   margin-bottom: 1rem;
   margin: 0.5rem;
 }
@@ -44,7 +45,8 @@
 }
 
 .drawer_boost .tab_drawer {
-  border: 1px solid var(--border_color);
+  border: none;
+  background-color: #04142B !important;
   border-radius: 0.4rem;
   padding: 0.4rem;
   margin-bottom: 1rem;
@@ -76,8 +78,14 @@
 }
 
 .drawer_boost .tab_drawer li button.active {
-  background: var(--color_primary);
-  color: var(--color_white);
+  background: #dee3ea !important;
+  background-color: #dee3ea !important;
+  color: var(--color_primary) !important;
+  font-weight: 600 !important;
+}
+
+.drawer_boost .drawer_select_item.filled {
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .drawer_boost .crypto_deposit li {
@@ -158,7 +166,7 @@
 
 .drawer_boost .address_code {
   margin-top: 1.5rem;
-  border-top: 1px solid var(--color_grey);
+  border-top: none;
 }
 
 .drawer_boost .address_code.bn {
@@ -196,8 +204,9 @@
           box-shadow: none;
   border: none;
   border-radius: 0.6rem;
-  border: 1px solid var(--color_grey);
   border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #04142B !important;
 }
 
 .drawer_boost .address_code .transfer_code::before {
@@ -211,6 +220,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .drawer_boost .address_code .transfer_code .select_symbol .symbol {
@@ -228,7 +238,7 @@
 .drawer_boost .address_code .transfer_code .select_symbol .symbol_name p {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--color_primary);
+  color: var(--color_white);
   text-transform: capitalize;
   margin-bottom: 0;
 }
@@ -242,8 +252,8 @@
 }
 
 .drawer_boost .address_code .transfer_code .qr_code {
-  max-width: 16rem;
-  max-height: 16rem;
+  max-width: 18rem;
+  max-height: 18rem;
   height: 100%;
   width: 100%;
   margin: 1rem auto;
@@ -257,7 +267,7 @@
 
 .drawer_boost .address_code .transfer_code .copy_address_box {
   margin-top: 1rem;
-  border-top: 1px solid var(--color_grey);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,8 +277,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 1rem;
-  padding-top: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .drawer_boost .address_code .transfer_code .copy_address_box .addres_Navlink p {
@@ -280,7 +289,7 @@
 
 .drawer_boost .address_code .transfer_code .copy_address_box .addres_Navlink h5 {
   font-size: 1.4rem;
-  color: var(--color_primary);
+  color: var(--color_white);
   max-width: 22rem;
   width: 100%;
   overflow: hidden;
@@ -317,7 +326,7 @@
 }
 
 .drawer_boost .address_code .tips_box {
-  background-color: var(--color_lightprimary);
+  background-color: #04142B;
   color: var(--color_secondary);
   padding: 1rem;
   border-radius: 0.5rem;
@@ -351,8 +360,8 @@
 .drawer_boost .address_code .percantage_box .percentage button.per_btn {
   padding: 0.5rem 0.8rem;
   font-size: 1.1rem;
-  color: var(--color_primary);
-  background-color: var(--color_lightprimary);
+  color: var(--color_white);
+  background-color: #04142B;
   margin: 0 0.2rem 0 0;
   min-width: 4rem;
 }
