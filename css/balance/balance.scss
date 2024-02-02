@@ -178,10 +178,18 @@
 
       &:first-child {
         font-size: 4rem;
+
+        @media screen and (max-width:91px) {
+          font-size: 3rem;
+        }
       }
 
       &:last-child {
         font-size: 2.8rem;
+
+        @media screen and (max-width:91px) {
+          font-size: 2.2rem;
+        }
       }
     }
 

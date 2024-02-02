@@ -198,8 +198,20 @@
   font-size: 4rem;
 }
 
+@media screen and (max-width: 91px) {
+  .balanceCard_box h4.amount span:first-child {
+    font-size: 3rem;
+  }
+}
+
 .balanceCard_box h4.amount span:last-child {
   font-size: 2.8rem;
+}
+
+@media screen and (max-width: 91px) {
+  .balanceCard_box h4.amount span:last-child {
+    font-size: 2.2rem;
+  }
 }
 
 .balanceCard_box h4.amount.filled {

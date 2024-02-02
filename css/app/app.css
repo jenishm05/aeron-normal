@@ -286,6 +286,7 @@
 
 .sidebar_menu.open li.menu_item a.active {
   background: var(--color_primary);
+  background-image: radial-gradient(90deg, #0D3772, #042048);
   color: var(--color_white);
   -webkit-box-shadow: 0 7px 12px 0 var(--color_lightprimary);
           box-shadow: 0 7px 12px 0 var(--color_lightprimary);
@@ -893,8 +894,20 @@
   font-size: 4rem;
 }
 
+@media screen and (max-width: 91px) {
+  .balanceCard_box h4.amount span:first-child {
+    font-size: 3rem;
+  }
+}
+
 .balanceCard_box h4.amount span:last-child {
   font-size: 2.8rem;
+}
+
+@media screen and (max-width: 91px) {
+  .balanceCard_box h4.amount span:last-child {
+    font-size: 2.2rem;
+  }
 }
 
 .balanceCard_box h4.amount.filled {
@@ -2293,7 +2306,7 @@ button.btn_action_boost svg {
   height: 100vh;
   width: 100%;
   overflow-y: auto;
-  padding-bottom: 10rem;
+  padding-bottom: 14rem;
 }
 
 .assets_title {
