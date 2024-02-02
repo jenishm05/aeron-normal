@@ -377,16 +377,16 @@
       function appendCards(array) {
         for (const item of array) {
           const $container = $('<div>').addClass('col-12 col-xl-6 mb-4');
-          const $card = $('<div>').addClass('cards').appendTo($container);
+          const $card = $('<a href="./earninner.html">').addClass('cards').appendTo($container);
 
           $card.append(`
             <div class="card_header">
               <div class="symols">
                 <img src="${item.icons}" />
                 <p>${item.name}</p>
-                </div>
-                </div>
-                `);
+              </div>
+            </div>
+          `);
 
           const $cardBody = $('<div>').addClass('card_body').appendTo($card);
           const $row = $('<div>').addClass('row').appendTo($cardBody);

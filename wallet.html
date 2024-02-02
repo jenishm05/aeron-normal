@@ -555,12 +555,48 @@
     <script>
       $("#appendRightsidebar").load("./drawer.html");
 
-      const tr = `<tr>
+
+      const assets = [
+        {
+          symbol: './images/avax.svg',
+          symbolName: 'Avax'
+        },
+        {
+          symbol: './images/bnb.svg',
+          symbolName: 'bnb'
+        },
+        {
+          symbol: './images/eth.svg',
+          symbolName: 'eth'
+        },
+        {
+          symbol: './images/btc.svg',
+          symbolName: 'btc'
+        },
+        {
+          symbol: './images/usdc.svg',
+          symbolName: 'usdc'
+        },
+        {
+          symbol: './images/tusd.svg',
+          symbolName: 'tusd'
+        },
+        {
+          symbol: './images/dai.svg',
+          symbolName: 'dai'
+        },
+        {
+          symbol: './images/usdt.svg',
+          symbolName: 'usdt'
+        },
+      ]
+      for (let i = 0; i < 21; i++) {
+        const tr = `<tr>
             <td>
-                <Box class='assets'>
-                    <img src='https://app.yield.app/assets/avax-symbol-1770e468.svg' class='symol' />
-                    <span class='symbol_name'>Avax</span>
-                </Box>
+                <a href='https://aeron-normal.vercel.app' class='assets'>
+                    <img src='${assets[i].symbol}' class='symol' />
+                    <span class='symbol_name'>${assets[i].symbolName}</span>
+                </a>
             </td>
             <td>
                 <Box class='assets_capital'>
@@ -598,7 +634,6 @@
             </td>
         </tr>`;
 
-      for (let i = 0; i < 21; i++) {
         $("#appendData").append(tr);
       }
 

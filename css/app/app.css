@@ -791,9 +791,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .balanceCard_box .page_title button.page_icon {
@@ -2199,7 +2199,7 @@ li {
   font-size: 2rem;
   font-weight: 700;
   color: var(--color_dark);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -2346,6 +2346,7 @@ table.table {
   border-radius: 0.6rem !important;
   border: 1px solid var(--border_color) !important;
   width: 100%;
+  vertical-align: middle;
 }
 
 table.table thead tr th {
@@ -2395,6 +2396,7 @@ table.table tbody tr td .assets {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: var(--color_dark);
 }
 
 table.table tbody tr td .assets img.symol {

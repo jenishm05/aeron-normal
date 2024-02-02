@@ -81,7 +81,7 @@ $('#handleRedeem').click(function () {
 
 const earnCardsArray = [
 	{
-		icons: '../images/tusd.svg',
+		icons: '../images/usdt.svg',
 		name: 'USDT',
 
 		cards: [
@@ -103,7 +103,7 @@ const earnCardsArray = [
 		]
 	},
 	{
-		icons: '../images/usdt.svg',
+		icons: '../images/tusd.svg',
 		name: 'TUSD',
 
 		cards: [

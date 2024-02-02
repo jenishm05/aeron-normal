@@ -319,13 +319,8 @@
 
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active w-100" id="send-tab-pane">
-                  <div id="sendBox1" class="sendBoxes text-center mt-3 py-5">
-                    <h5 class="conform_small">Are you sure</h5>
-                    <h6 class="conform_text mb-4">Do you want to procced</h6>
-                    <button class="boost_btn primary px-5 w-50 mx-auto next-btn">Next</button>
-                  </div>
 
-                  <div id="sendBox2" class="sendBoxes mt-3" style="display: none;">
+                  <div id="sendBox1" class="sendBoxes mt-3">
                     <!-- Wallet Address Enter -->
                     <p class="sub_title">Wallet Address</p>
                     <input type="text" placeholder="Enter Wallet Address" class="input_filed w-100" />
@@ -342,8 +337,18 @@
                     </div>
 
                     <div class="d-flex align-items-center mt-4">
-                      <button class="boost_btn grey w-50 cancel-btn">Cancel</button>
+                      <button class="boost_btn grey w-50">Clear</button>
                       <button class="boost_btn primary w-50 next-btn">send</button>
+                    </div>
+                  </div>
+
+                  <div id="sendBox2" class="sendBoxes text-center mt-3 py-5" style="display: none;">
+                    <h5 class="conform_small">Are you sure</h5>
+                    <h6 class="conform_text mb-4">Do you want to procced</h6>
+
+                    <div class="d-flex align-items-center">
+                      <button class="boost_btn grey px-5 w-50 cancel-btn">cancel</button>
+                      <button class="boost_btn primary px-5 w-50 next-btn">Next</button>
                     </div>
                   </div>
 

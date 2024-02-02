@@ -53,7 +53,7 @@ li {
   font-size: 2rem;
   font-weight: 700;
   color: var(--color_dark);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 
   @media screen and (max-width:991px) {
     padding: 0.5rem 0;
@@ -183,6 +183,7 @@ table.table {
   border-radius: 0.6rem !important;
   border: 1px solid var(--border_color) !important;
   width: 100%;
+  vertical-align: middle;
 
   thead {
     tr {
@@ -240,6 +241,7 @@ table.table {
         .assets {
           display: flex;
           align-items: center;
+          color: var(--color_dark);
 
           img.symol {
             height: 2rem;
