@@ -739,23 +739,6 @@
   display: none;
 }
 
-.balanceCard_box .card_simple.green {
-  background-color: rgba(0, 156, 25, 0.1);
-}
-
-.balanceCard_box .card_simple.green .icons {
-  color: #009c19;
-  height: 10rem;
-  width: 10rem;
-}
-
-@media screen and (max-width: 767px) {
-  .balanceCard_box .card_simple.green .icons {
-    height: 8rem;
-    width: 8rem;
-  }
-}
-
 .balanceCard_box .card_simple .icons {
   position: absolute;
   top: 55%;
@@ -911,10 +894,10 @@
 }
 
 .balanceCard_box h4.amount.filled {
-  background-color: var(--color_primary);
+  background-color: #E6F5E9;
   padding: 0.8rem 2rem;
   border-radius: 0.6rem;
-  color: var(--color_white);
+  color: green;
 }
 
 .balanceCard_box h4.amount.dark {
@@ -3083,10 +3066,6 @@ h6.conform_text {
   display: block;
 }
 
-.owl_card_slider .owl-nav {
-  display: none;
-}
-
 .owl_card_slider .owl-controls .owl-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3102,18 +3081,21 @@ h6.conform_text {
 .owl_card_slider .owl-controls .owl-pagination .owl-page {
   margin-top: 1rem;
   text-align: left;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.6rem;
+  background-color: var(--color_secondary);
+  border-radius: 100%;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.owl_card_slider .owl-controls .owl-pagination .owl-page span {
-  background-color: var(--color_dots) !important;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  margin: 0.3rem !important;
-}
-
-.owl_card_slider .owl-controls .owl-pagination .owl-page.active span {
-  background-color: var(--color_primary) !important;
+.owl_card_slider .owl-controls .owl-pagination .owl-page.active {
+  background-color: var(--color_primary);
   width: 4rem;
+  border-radius: 1rem;
+  opacity: 1;
 }
 
 .owl_card_slider .owl-item {

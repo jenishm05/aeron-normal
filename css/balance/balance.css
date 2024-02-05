@@ -43,23 +43,6 @@
   display: none;
 }
 
-.balanceCard_box .card_simple.green {
-  background-color: rgba(0, 156, 25, 0.1);
-}
-
-.balanceCard_box .card_simple.green .icons {
-  color: #009c19;
-  height: 10rem;
-  width: 10rem;
-}
-
-@media screen and (max-width: 767px) {
-  .balanceCard_box .card_simple.green .icons {
-    height: 8rem;
-    width: 8rem;
-  }
-}
-
 .balanceCard_box .card_simple .icons {
   position: absolute;
   top: 55%;
@@ -215,10 +198,10 @@
 }
 
 .balanceCard_box h4.amount.filled {
-  background-color: var(--color_primary);
+  background-color: #E6F5E9;
   padding: 0.8rem 2rem;
   border-radius: 0.6rem;
-  color: var(--color_white);
+  color: green;
 }
 
 .balanceCard_box h4.amount.dark {

@@ -862,10 +862,6 @@ h6.conform_text {
     display: block;
   }
 
-  .owl-nav {
-    display: none;
-  }
-
   .owl-controls {
     .owl-pagination {
       display: flex;
@@ -875,18 +871,19 @@ h6.conform_text {
       .owl-page {
         margin-top: 1rem;
         text-align: left;
-
-        span {
-          background-color: var(--color_dots) !important;
-          transition: 0.5s;
-          margin: 0.3rem !important;
-        }
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 0.6rem;
+        background-color: var(--color_secondary);
+        border-radius: 100%;
+        opacity: 0.5;
+        transition: 0.3s;
 
         &.active {
-          span {
-            background-color: var(--color_primary) !important;
-            width: 4rem;
-          }
+          background-color: var(--color_primary);
+          width: 4rem;
+          border-radius: 1rem;
+          opacity: 1;
         }
       }
     }

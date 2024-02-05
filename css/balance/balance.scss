@@ -41,20 +41,20 @@
       display: none;
     }
 
-    &.green {
-      background-color: rgba(0, 156, 25, 0.1);
+    // &.green {
+    //   background-color: rgba(0, 156, 25, 0.1);
 
-      .icons {
-        color: rgba(0, 156, 25, 1);
-        height: 10rem;
-        width: 10rem;
+    //   .icons {
+    //     color: rgba(0, 156, 25, 1);
+    //     height: 10rem;
+    //     width: 10rem;
 
-        @media screen and (max-width:767px) {
-          height: 8rem;
-          width: 8rem;
-        }
-      }
-    }
+    //     @media screen and (max-width:767px) {
+    //       height: 8rem;
+    //       width: 8rem;
+    //     }
+    //   }
+    // }
 
     // &.danger {
     //   background-color: rgba(184, 0, 0, 0.1);
@@ -194,10 +194,10 @@
     }
 
     &.filled {
-      background-color: var(--color_primary);
+      background-color: #E6F5E9;
       padding: 0.8rem 2rem;
       border-radius: 0.6rem;
-      color: var(--color_white);
+      color: rgba(0, 128, 0, 100%);
     }
 
     &.dark {

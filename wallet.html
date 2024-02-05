@@ -377,7 +377,7 @@
         <div class="modal-content">
           <div class="modal_header">
             <h5>REDEEM BTC</h5>
-            <button class="modal_close" onclick="handleClose()">
+            <button class="modal_close" data-bs-dismiss="modal">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -386,12 +386,12 @@
           </div>
 
           <div class="modal_body">
-            <div id="beforeRedeem">
+            <div id="afterRedeem" class="d-none">
               <h5 class="conform_small">Are you sure</h5>
               <h6 class="conform_text">Do you want to procced</h6>
             </div>
 
-            <div id="afterRedeem" class="d-none">
+            <div id="beforeRedeem">
               <div class="earn_toggle">
                 <!-- Toggle for earn Type -->
                 <button value="left">
@@ -468,7 +468,7 @@
         <div class="modal-content">
           <div class="modal_header">
             <h5>EARN BTC</h5>
-            <button class="modal_close" onclick="handleClose()">
+            <button class="modal_close" data-bs-dismiss="modal">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -477,12 +477,12 @@
           </div>
 
           <div class="modal_body">
-            <div id="beforeConform">
+            <div id="afterConform" class="d-none">
               <h5 class="conform_small">Are you sure</h5>
               <h6 class="conform_text">Do you want to procced</h6>
             </div>
 
-            <div id="afterConform" class="d-none">
+            <div id="beforeConform">
               <div class="earn_toggle">
                 <button value="left">
                   <p>Smart Earn</p>
@@ -626,7 +626,7 @@
                   </a>
 
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#earnModal">Exchange</a></li>
+                    <li><a class="dropdown-item">Exchange</a></li>
                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#earnModal">Earn</a></li>
                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#redeemModal">Redeem</a></li>
                   </ul>

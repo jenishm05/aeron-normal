@@ -7,9 +7,9 @@
     <title>Index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./css/app/app.css">
-    <link rel="stylesheet" href="./css/balance/balance.css">
+    <!-- <link rel="stylesheet" href="./css/balance/balance.css"> -->
   </head>
 
   <body>
@@ -912,7 +912,7 @@
         <div class="modal-content">
           <div class="modal_header">
             <h5>REDEEM BTC</h5>
-            <button class="modal_close" onclick="handleClose()">
+            <button class="modal_close" data-bs-dismiss="modal">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -921,12 +921,12 @@
           </div>
 
           <div class="modal_body">
-            <div id="beforeRedeem">
+            <div id="afterRedeem" class="d-none">
               <h5 class="conform_small">Are you sure</h5>
               <h6 class="conform_text">Do you want to procced</h6>
             </div>
 
-            <div id="afterRedeem" class="d-none">
+            <div id="beforeRedeem">
               <div class="earn_toggle">
                 <!-- Toggle for earn Type -->
                 <button value="left">
@@ -1003,7 +1003,7 @@
         <div class="modal-content">
           <div class="modal_header">
             <h5>EARN BTC</h5>
-            <button class="modal_close" onclick="handleClose()">
+            <button class="modal_close" data-bs-dismiss="modal">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1012,12 +1012,12 @@
           </div>
 
           <div class="modal_body">
-            <div id="beforeConform">
+            <div id="afterConform" class="d-none">
               <h5 class="conform_small">Are you sure</h5>
               <h6 class="conform_text">Do you want to procced</h6>
             </div>
 
-            <div id="afterConform" class="d-none">
+            <div id="beforeConform">
               <div class="earn_toggle">
                 <button value="left">
                   <p>Smart Earn</p>
@@ -1075,7 +1075,6 @@
 
           <div class="modal_footer">
             <button id="handleConform" class="boost_btn primary w-100">procced</button>
-            <!-- <a href="#" class="link">Terms & Conditions</a> -->
             <span>You will begin earning rewards within the next 48 hours</span>
           </div>
         </div>
@@ -1089,7 +1088,6 @@
     <script>
       $(document).ready(function () {
         $("#appendRightsidebar").load("./drawer.html");
-
 
         const tr = `<tr>
             <td>
@@ -1125,7 +1123,7 @@
                   </a>
 
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#earnModal">Exchange</a></li>
+                    <li><a class="dropdown-item">Exchange</a></li>
                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#earnModal">Earn</a></li>
                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#redeemModal">Redeem</a></li>
                   </ul>
@@ -1139,6 +1137,27 @@
 
 
         const sliders = [
+          {
+            id: 1,
+            icons: './images/dai.svg',
+            parcentage: '12%',
+            bgLight: './images/dai-light.png',
+            bg: 'linear-gradient(-180deg, #FFCE64, #C79528)'
+          },
+          {
+            id: 2,
+            icons: './images/eth.svg',
+            parcentage: '14%',
+            bgLight: './images/eth-light.png',
+            bg: 'linear-gradient(-180deg, #8198F1, #526BCD)'
+          },
+          {
+            id: 3,
+            icons: './images/btc.svg',
+            parcentage: '11%',
+            bgLight: './images/btc-light.png',
+            bg: 'linear-gradient(-180deg, #F8C75D, #F7931A)'
+          },
           {
             id: 1,
             icons: './images/dai.svg',
@@ -1179,13 +1198,12 @@
 
           $("#appendCard").append(card);
         }
-
         $("#appendCard").owlCarousel({
           items: 3,
           loop: true,
           margin: 10,
           nav: true,
-
+          pagination: true,
           responsive: {
             375: {
               items: 3,
@@ -1196,17 +1214,12 @@
             991: {
               items: 2,
             },
-            1200: {
-              items: 2,
-            },
-            1400: {
-              items: 2,
-            },
             1600: {
               items: 3,
             },
           },
         });
+
       });
     </script>
   </body>
