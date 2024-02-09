@@ -7,8 +7,8 @@
 @import "../faq//faq.scss";
 @import "../drawer/drawer.scss";
 @import "../variables/variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=Exchange');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
   margin: 0;
@@ -27,9 +27,7 @@ body {
   background-color: #f2f3f9;
 
   * {
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    font-family: "Inter";
   }
 }
 
@@ -69,11 +67,12 @@ button,
 
 button.boost_btn {
   padding: 1rem 1.8rem;
-  border-radius: 5rem;
+  border-radius: 0.4rem;
   font-size: 1.4rem;
   text-transform: capitalize;
   margin: 0.5rem !important;
   min-width: none;
+  font-weight: 500;
 
   svg {
     margin-right: 1rem !important;
@@ -99,6 +98,13 @@ button.boost_btn {
     }
   }
 
+
+  &.white {
+    background-color: var(--color_white);
+    color: var(--color_primary);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
   &.oulined_primary {
     color: var(--color_primary);
     border: 1px solid var(--color_primary);
@@ -115,8 +121,9 @@ button.boost_btn {
   }
 
   &.grey {
-    background-color: var(--color_grey);
-    color: var(--color_primary) !important;
+    background-color: transparent;
+    border: 1px solid var(--color_grey);
+    color: var(--color_white) !important;
   }
 
   &.square {
@@ -375,6 +382,12 @@ label.label {
   &.transparent {
     background-color: transparent;
     border: none;
+  }
+
+  &.bordered {
+    background-color: transparent;
+    border: 1px solid rgba($color: #FFFFFF, $alpha: 0.2);
+    color: var(--color_white);
   }
 }
 
@@ -774,82 +787,83 @@ h6.conform_text {
   }
 }
 
-.symbol_list {
-  max-height: 34rem;
-  height: 100%;
-  width: 100%;
-  overflow-y: auto;
-  margin-top: 1rem;
-  padding-right: 1rem;
+.symbolBox {
 
-  .drawer_select_item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .symbol_list {
+    max-height: 34rem;
+    height: 100%;
     width: 100%;
-    border: 1px solid var(--color_grey);
-    // margin-bottom: 1rem;
+    overflow-y: auto;
+    margin-top: 2rem;
+    padding-right: 1rem;
 
-    .select_symbol {
+    .drawer_select_item {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       width: 100%;
 
-      .symbol {
-        max-height: 2.2rem;
-        max-width: 2.2rem;
-        height: 100%;
+      .select_symbol {
+        display: flex;
+        align-items: center;
         width: 100%;
+
+        .symbol {
+          max-height: 3.4rem;
+          max-width: 3.4rem;
+          height: 100%;
+          width: 100%;
+        }
+
+        .symbol_name {
+          display: block;
+          margin-left: 2rem;
+
+          p {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--color_white);
+            text-transform: capitalize;
+          }
+
+          span {
+            font-size: 1.2rem;
+            color: var(--color_secondary);
+            font-weight: 400;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+          }
+        }
       }
 
-      .symbol_name {
+      .symbol_price {
         display: block;
-        margin-left: 1rem;
+        text-align: right;
+        width: 100%;
+
+        input.form-check-input {
+          height: 2.4rem;
+          width: 2.4rem;
+          box-shadow: none;
+          color: var(--color_primary);
+
+          &:checked {
+            background-color: var(--color_primary);
+            border-color: var(--color_primary);
+          }
+        }
 
         p {
           font-size: 1.3rem;
-          font-weight: 600;
-          color: var(--color_primary);
-          text-transform: capitalize;
+          color: var(--color_dark);
+          font-weight: 500;
         }
 
         span {
           font-size: 1.2rem;
           color: var(--color_secondary);
           font-weight: 400;
-          margin-top: 0.5rem;
-          text-transform: uppercase;
         }
-      }
-    }
-
-    .symbol_price {
-      display: block;
-      text-align: right;
-      width: 100%;
-
-      input.form-check-input {
-        height: 2.4rem;
-        width: 2.4rem;
-        box-shadow: none;
-        color: var(--color_primary);
-
-        &:checked {
-          background-color: var(--color_primary);
-          border-color: var(--color_primary);
-        }
-      }
-
-      p {
-        font-size: 1.3rem;
-        color: var(--color_dark);
-        font-weight: 500;
-      }
-
-      span {
-        font-size: 1.2rem;
-        color: var(--color_secondary);
-        font-weight: 400;
       }
     }
   }

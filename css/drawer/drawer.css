@@ -1,6 +1,7 @@
 .drawer_boost {
   width: auto !important;
-  background-color: #062148 !important;
+  background: #0f3771;
+  background: radial-gradient(circle, #0f3771 16%, #062148 97%);
 }
 
 .drawer_boost .offcanvas-body {
@@ -358,12 +359,13 @@
 }
 
 .drawer_boost .address_code .percantage_box .percentage button.per_btn {
-  padding: 0.5rem 0.8rem;
-  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
   color: var(--color_white);
-  background-color: #04142B;
+  background-color: rgba(0, 0, 0, 0.4);
   margin: 0 0.2rem 0 0;
-  min-width: 4rem;
+  min-width: 5rem;
 }
 
 .drawer_boost .address_code .percantage_box h4 {

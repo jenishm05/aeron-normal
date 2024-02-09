@@ -1,5 +1,5 @@
 @import url("../header/header.css");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=Exchange");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 .sidebar_menu {
   max-width: 10rem;
   width: 100%;
@@ -1506,7 +1506,8 @@
 
 .drawer_boost {
   width: auto !important;
-  background-color: #062148 !important;
+  background: #0f3771;
+  background: radial-gradient(circle, #0f3771 16%, #062148 97%);
 }
 
 .drawer_boost .offcanvas-body {
@@ -1864,12 +1865,13 @@
 }
 
 .drawer_boost .address_code .percantage_box .percentage button.per_btn {
-  padding: 0.5rem 0.8rem;
-  font-size: 1.1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
   color: var(--color_white);
-  background-color: #04142B;
+  background-color: rgba(0, 0, 0, 0.4);
   margin: 0 0.2rem 0 0;
-  min-width: 4rem;
+  min-width: 5rem;
 }
 
 .drawer_boost .address_code .percantage_box h4 {
@@ -2157,9 +2159,7 @@ body {
 }
 
 body * {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-family: "Inter";
 }
 
 .modal-backdrop {
@@ -2200,11 +2200,12 @@ button,
 
 button.boost_btn {
   padding: 1rem 1.8rem;
-  border-radius: 5rem;
+  border-radius: 0.4rem;
   font-size: 1.4rem;
   text-transform: capitalize;
   margin: 0.5rem !important;
   min-width: none;
+  font-weight: 500;
 }
 
 button.boost_btn svg {
@@ -2232,6 +2233,13 @@ button.boost_btn.primary:hover {
           box-shadow: var(shadow_primary);
 }
 
+button.boost_btn.white {
+  background-color: var(--color_white);
+  color: var(--color_primary);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
 button.boost_btn.oulined_primary {
   color: var(--color_primary);
   border: 1px solid var(--color_primary);
@@ -2248,8 +2256,9 @@ button.boost_btn.danger {
 }
 
 button.boost_btn.grey {
-  background-color: var(--color_grey);
-  color: var(--color_primary) !important;
+  background-color: transparent;
+  border: 1px solid var(--color_grey);
+  color: var(--color_white) !important;
 }
 
 button.boost_btn.square {
@@ -2521,6 +2530,12 @@ label.label.attachFile svg {
 .input_filed.transparent {
   background-color: transparent;
   border: none;
+}
+
+.input_filed.bordered {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color_white);
 }
 
 .transition_select_2 {
@@ -2967,16 +2982,16 @@ h6.conform_text {
   color: var(--color_white);
 }
 
-.symbol_list {
+.symbolBox .symbol_list {
   max-height: 34rem;
   height: 100%;
   width: 100%;
   overflow-y: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding-right: 1rem;
 }
 
-.symbol_list .drawer_select_item {
+.symbolBox .symbol_list .drawer_select_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2987,10 +3002,9 @@ h6.conform_text {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  border: 1px solid var(--color_grey);
 }
 
-.symbol_list .drawer_select_item .select_symbol {
+.symbolBox .symbol_list .drawer_select_item .select_symbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3000,26 +3014,26 @@ h6.conform_text {
   width: 100%;
 }
 
-.symbol_list .drawer_select_item .select_symbol .symbol {
-  max-height: 2.2rem;
-  max-width: 2.2rem;
+.symbolBox .symbol_list .drawer_select_item .select_symbol .symbol {
+  max-height: 3.4rem;
+  max-width: 3.4rem;
   height: 100%;
   width: 100%;
 }
 
-.symbol_list .drawer_select_item .select_symbol .symbol_name {
+.symbolBox .symbol_list .drawer_select_item .select_symbol .symbol_name {
   display: block;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
-.symbol_list .drawer_select_item .select_symbol .symbol_name p {
-  font-size: 1.3rem;
+.symbolBox .symbol_list .drawer_select_item .select_symbol .symbol_name p {
+  font-size: 1.6rem;
   font-weight: 600;
-  color: var(--color_primary);
+  color: var(--color_white);
   text-transform: capitalize;
 }
 
-.symbol_list .drawer_select_item .select_symbol .symbol_name span {
+.symbolBox .symbol_list .drawer_select_item .select_symbol .symbol_name span {
   font-size: 1.2rem;
   color: var(--color_secondary);
   font-weight: 400;
@@ -3027,13 +3041,13 @@ h6.conform_text {
   text-transform: uppercase;
 }
 
-.symbol_list .drawer_select_item .symbol_price {
+.symbolBox .symbol_list .drawer_select_item .symbol_price {
   display: block;
   text-align: right;
   width: 100%;
 }
 
-.symbol_list .drawer_select_item .symbol_price input.form-check-input {
+.symbolBox .symbol_list .drawer_select_item .symbol_price input.form-check-input {
   height: 2.4rem;
   width: 2.4rem;
   -webkit-box-shadow: none;
@@ -3041,18 +3055,18 @@ h6.conform_text {
   color: var(--color_primary);
 }
 
-.symbol_list .drawer_select_item .symbol_price input.form-check-input:checked {
+.symbolBox .symbol_list .drawer_select_item .symbol_price input.form-check-input:checked {
   background-color: var(--color_primary);
   border-color: var(--color_primary);
 }
 
-.symbol_list .drawer_select_item .symbol_price p {
+.symbolBox .symbol_list .drawer_select_item .symbol_price p {
   font-size: 1.3rem;
   color: var(--color_dark);
   font-weight: 500;
 }
 
-.symbol_list .drawer_select_item .symbol_price span {
+.symbolBox .symbol_list .drawer_select_item .symbol_price span {
   font-size: 1.2rem;
   color: var(--color_secondary);
   font-weight: 400;
