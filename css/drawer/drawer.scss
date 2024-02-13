@@ -196,7 +196,6 @@
       box-shadow: none;
       border: none;
       border-radius: 0.6rem;
-      // border: 1px solid var(--color_grey);
       border-radius: 0.5rem;
       overflow: hidden;
       background-color: #04142B !important;
@@ -208,8 +207,8 @@
       .select_symbol {
         display: flex;
         align-items: center;
-        // background-color: rgba(0, 0, 0, 40%) !important;
         border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+        cursor: pointer;
 
         .symbol {
           max-height: 2.6rem;
@@ -240,67 +239,78 @@
         }
       }
 
-      .qr_code {
-        max-width: 18rem;
-        max-height: 18rem;
-        height: 100%;
-        width: 100%;
-        margin: 1rem auto;
+      #qrCodeBoxhandle {
+        height: 0;
+        transition: 0.5s;
 
-        img,
-        svg {
+        .qr_code {
+          max-width: 18rem;
+          max-height: 18rem;
           height: 100%;
           width: 100%;
-        }
-      }
+          margin: 0 auto;
+          padding: 1rem 0;
 
-      .copy_address_box {
-        margin-top: 1rem;
-        border-top: 1px solid rgba($color: #FFFFFF, $alpha: 0.2);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.5rem 1rem;
-
-        .addres_Navlink {
-          p {
-            font-size: 1.3rem;
-            color: var(--color_secondary);
-            margin-bottom: 0.4rem;
-            margin-bottom: 0;
-          }
-
-          h5 {
-            font-size: 1.4rem;
-            color: var(--color_white);
-            max-width: 22rem;
+          img,
+          svg {
+            height: 100%;
             width: 100%;
-            overflow: hidden;
-            white-space: nowrap;
-            font-weight: 600;
-            text-overflow: ellipsis;
           }
         }
 
-        .addres_action {
+        .copy_address_box {
+          margin-top: 1rem;
+          border-top: 1px solid rgba($color: #FFFFFF, $alpha: 0.2);
           display: flex;
           align-items: center;
-          justify-content: end;
+          justify-content: space-between;
+          padding: 1.5rem 1rem;
 
-          button.address_btn {
-            min-width: 3rem;
-            min-height: 3rem;
-            padding: 0.4rem;
-            border-radius: 0.5rem;
-            background-color: transparent;
-            color: var(--color_primary);
-            margin: 0.2rem;
+          .addres_Navlink {
+            p {
+              font-size: 1.3rem;
+              color: var(--color_secondary);
+              margin-bottom: 0.4rem;
+              margin-bottom: 0;
+            }
 
-            svg {
-              height: 2.2rem;
-              color: var(--color_primary);
+            h5 {
+              font-size: 1.4rem;
+              color: var(--color_white);
+              max-width: 22rem;
+              width: 100%;
+              overflow: hidden;
+              white-space: nowrap;
+              font-weight: 600;
+              text-overflow: ellipsis;
             }
           }
+
+          .addres_action {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            button.address_btn {
+              min-width: 3rem;
+              min-height: 3rem;
+              padding: 0.4rem;
+              border-radius: 0.5rem;
+              background-color: transparent;
+              color: var(--color_primary);
+              margin: 0.2rem;
+
+              svg {
+                height: 2.2rem;
+                color: var(--color_primary);
+              }
+            }
+          }
+        }
+
+        &.open {
+          height: auto;
+          transition: 0.5s;
         }
       }
     }
@@ -414,38 +424,130 @@
 }
 
 
-.drawer_select_item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  border-radius: 0.6rem;
-  cursor: pointer;
+.depositBox {
 
-  &.filled {
-    background: var(--color_primary);
-  }
-
-  .select_symbol {
+  .drawer_select_item {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
 
-    .symbol {
-      max-height: 2.6rem;
-      max-width: 2.6rem;
-      height: 100%;
-      width: 100%;
+    &.filled {
+      background: var(--color_primary);
     }
 
-    .symbol_name {
+    .select_symbol {
+      display: flex;
+      align-items: center;
+
+      .symbol {
+        max-height: 2.6rem;
+        max-width: 2.6rem;
+        height: 100%;
+        width: 100%;
+      }
+
+      .symbol_name {
+        display: block;
+        margin-left: 1rem;
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: var(--color_white);
+          text-transform: capitalize;
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 1.2rem;
+          color: var(--color_secondary);
+          font-weight: 400;
+          margin-top: 0.5rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .symbol_price {
       display: block;
-      margin-left: 1rem;
+      text-align: right;
 
       p {
-        font-size: 1.4rem;
-        font-weight: 600;
+        font-size: 1.3rem;
         color: var(--color_white);
-        text-transform: capitalize;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+
+      span {
+        font-size: 1.2rem;
+        color: var(--color_grey);
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+.symbol_list {
+  max-height: 40rem;
+  overflow-y: auto;
+
+  .drawer_select_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid var(--border_color);
+    margin-top: 1.5rem;
+
+    .select_symbol {
+      display: flex;
+      align-items: center;
+
+      .symbol {
+        max-height: 2.6rem;
+        max-width: 2.6rem;
+        height: 100%;
+        width: 100%;
+      }
+
+      .symbol_name {
+        display: block;
+        margin-left: 1rem;
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: var(--color_dark);
+          text-transform: capitalize;
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 1.2rem;
+          color: var(--color_secondary);
+          font-weight: 400;
+          margin-top: 0.5rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .symbol_price {
+      display: block;
+      text-align: right;
+
+      p {
+        font-size: 1.3rem;
+        color: var(--color_dark);
+        font-weight: 600;
         margin-bottom: 0;
       }
 
@@ -453,27 +555,8 @@
         font-size: 1.2rem;
         color: var(--color_secondary);
         font-weight: 400;
-        margin-top: 0.5rem;
-        text-transform: uppercase;
+        opacity: 0.6;
       }
-    }
-  }
-
-  .symbol_price {
-    display: block;
-    text-align: right;
-
-    p {
-      font-size: 1.3rem;
-      color: var(--color_white);
-      font-weight: 600;
-      margin-bottom: 0;
-    }
-
-    span {
-      font-size: 1.2rem;
-      color: var(--color_grey);
-      font-weight: 400;
     }
   }
 }

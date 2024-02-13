@@ -1,136 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- <link rel="stylesheet" href="./css/app/app.css"> -->
-  </head>
+<head>
+  <!-- <link rel="stylesheet" href="./css/app/app.css"> -->
+</head>
 
-  <body>
-    <!-- ======== Tabs Box ========= -->
-    <div id="manageBox">
-      <ul class="nav nav-tabs tabs w-33 tab_drawer" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-            Deposit
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-            Withdraw
-          </button>
-        </li>
-      </ul>
-
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active w-100" id="home-tab-pane">
-          <div id="deposit1" class="addSymbol depositBox">
-            <span class="f-secondary fw-500" style="font-size: 14px">Choose your preferred currency</span>
-
-            <div class="symbolBox">
-
-              <div class="symbol_list next-deposit">
-                <div class="drawer_select_item">
-                  <div class="select_symbol">
-                    <img src="./images/tusd.svg" class="symbol" />
-                    <div class="symbol_name">
-                      <p>Tether</p>
-                      <span>Deposit Tether</span>
-                    </div>
-                  </div>
-
-                  <div class="symbol_price">
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="symbol_list next-deposit">
-                <div class="drawer_select_item">
-                  <div class="select_symbol">
-                    <img src="./images/btc.svg" class="symbol" />
-                    <div class="symbol_name">
-                      <p>Bitcoin</p>
-                      <span>Deposit Bitcoin</span>
-                    </div>
-                  </div>
-
-                  <div class="symbol_price">
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="symbol_list next-deposit">
-                <div class="drawer_select_item">
-                  <div class="select_symbol">
-                    <img src="./images/eth.svg" class="symbol" />
-                    <div class="symbol_name">
-                      <p>Ethereum</p>
-                      <span>Deposit ETH</span>
-                    </div>
-                  </div>
-
-                  <div class="symbol_price">
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="symbol_list next-deposit">
-                <div class="drawer_select_item">
-                  <div class="select_symbol">
-                    <img src="./images/bnb.svg" class="symbol" />
-                    <div class="symbol_name">
-                      <p>Ethereum</p>
-                      <span>Deposit ETH</span>
-                    </div>
-                  </div>
-
-                  <div class="symbol_price">
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
-                    </svg>
-                  </div>
-                </div>
+<body>
+  <!-- ======== Tabs Box ========= -->
+  <div id="manageBox">
+    <ul class="nav nav-tabs tabs w-33 tab_drawer" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"> Deposit </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"> Withdraw </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active w-100" id="home-tab-pane">
+        <div class="mt-3 depositBox" id="deposit2">
+          <p class="sub_title mb-4">Current balance: 12,112,95 USDT</p>
+          <div class="drawer_select_item filled" data-bs-toggle="modal" data-bs-target="#activeBalance">
+            <div class="select_symbol p-2">
+              <img src="./images/bnb.svg" class="symbol" />
+              <div class="symbol_name">
+                <p class="mb-0">BNB</p>
+                <span>USDT</span>
               </div>
             </div>
+            <div class="symbol_price">
+              <p>'12,119.95 USDT'</p>
+              <span>$12,113.24</span>
+            </div>
           </div>
-
-          <div class="mt-3 depositBox" id="deposit2" style="display: none;">
-            <p class="sub_title mb-4">Current balance: 12,112,95 USDT</p>
-
-            <div class="drawer_select_item filled">
-              <div class="select_symbol p-2">
-                <img src="./images/bnb.svg" class="symbol" />
+          <div class="address_code">
+            <p class="sub_title">YOUR DEPOSIT ADDRESS</p>
+            <div class="transfer_code">
+              <div class="select_symbol p-3" id="handleSymbolBox">
+                <img src="./images/avax.svg" class="symbol" />
                 <div class="symbol_name">
-                  <p class="mb-0">BNB</p>
+                  <p class="mb-0">Tether</p>
                   <span>USDT</span>
                 </div>
               </div>
-
-              <div class="symbol_price">
-                <p>'12,119.95 USDT'</p>
-                <span>$12,113.24</span>
-              </div>
-            </div>
-
-            <div class="address_code">
-              <p class="sub_title">YOUR DEPOSIT ADDRESS</p>
-              <div class="transfer_code">
-                <div class="select_symbol p-3">
-                  <img src="./images/avax.svg" class="symbol" />
-                  <div class="symbol_name">
-                    <p class="mb-0">Tether</p>
-                    <span>USDT</span>
-                  </div>
-                </div>
+              <div id="qrCodeBoxhandle">
                 <div class="qr_code">
                   <img src="./images/qr_code_wihte.png" />
                 </div>
-
                 <ul class="mt-2">
                   <li class="d-flex align-content-center justify-content-center p-2">
                     <p style="font-size: 14px" class="f-secondary fw-500">1 USDT =</p>
@@ -141,7 +57,6 @@
                     <p class="f-primary fw-600 fs-5">10 USDT</p>
                   </li>
                 </ul>
-
                 <div class="copy_address_box">
                   <div class="addres_Navlink">
                     <p>ADDRESS</p>
@@ -161,338 +76,445 @@
                   </div>
                 </div>
               </div>
-
-              <p class="sub_title">QUICK TIPS</p>
-              <div class="tips_box">Please always check your deposit wallet address on our site before making your transactions</div>
+            </div>
+            <p class="sub_title">QUICK TIPS</p>
+            <div class="tips_box">Please always check your deposit wallet address on our site before making your transactions</div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade w-100" id="profile-tab-pane">
+        <div class="mt-4 withdrawBoxes" id="withdraw1">
+          <p class="sub_title">Current balance: 5,826.11 USDT</p>
+          <div class="address_code bn">
+            <label class="label white" style="margin-top: 1.5rem">Amount</label>
+            <input type="number" placeholder="Capital" class="input_filed w-100 bordered" />
+            <div class="percantage_box">
+              <div class="percentage">
+                <button class="per_btn">25%</button>
+                <button class="per_btn">50%</button>
+                <button class="per_btn">75%</button>
+                <button class="per_btn">100%</button>
+              </div>
+            </div>
+            <div class="tips_box">
+              <p class="sub_title">Minimum withdrawal amount: 20 USDT</p>
+            </div>
+            <div class="d-flex align-items-center">
+              <button class="boost_btn grey w-50 cancel-btnWithdraw">Cancle</button>
+              <button class="boost_btn white w-50 next-btnWithdraw">Next</button>
             </div>
           </div>
         </div>
-
-        <div class="tab-pane fade w-100" id="profile-tab-pane">
-          <div class="mt-4 withdrawBoxes" id="withdraw1">
-            <p class="sub_title">Current balance: 5,826.11 USDT</p>
-
-            <div class="address_code bn">
-              <label class="label white" style="margin-top: 1.5rem">Amount</label>
-              <input type="number" placeholder="Capital" class="input_filed w-100 bordered" />
-              <div class="percantage_box">
-                <div class="percentage">
-                  <button class="per_btn">25%</button>
-                  <button class="per_btn">50%</button>
-                  <button class="per_btn">75%</button>
-                  <button class="per_btn">100%</button>
-                </div>
-              </div>
-
-              <div class="tips_box">
-                <p class="sub_title">Minimum withdrawal amount: 20 USDT</p>
-              </div>
-
-              <div class="d-flex align-items-center">
-                <button class="boost_btn grey w-50 cancel-btnWithdraw">Cancle</button>
-                <button class="boost_btn white w-50 next-btnWithdraw">Next</button>
-              </div>
+        <div class="mt-4 withdrawBoxes" id="withdraw2" style="display: none;">
+          <p class="sub_title">Wallet Details</p>
+          <p class="sub_title" style="margin-top: 1.5rem">Pay to</p>
+          <div class="address_code bn">
+            <label class="label white" style="margin-top: 1.5rem">Wallet Address</label>
+            <input type="number" placeholder="Capital" class="input_filed bordered w-100" />
+            <div class="tips_box">
+              <p class="sub_title">Please always check your withdrawal waller address before making your transactions.</p>
             </div>
-          </div>
-
-          <div class="mt-4 withdrawBoxes" id="withdraw2" style="display: none;">
-            <p class="sub_title">Wallet Details</p>
-
-            <p class="sub_title" style="margin-top: 1.5rem">Pay to</p>
-            <div class="address_code bn">
-              <label class="label white" style="margin-top: 1.5rem">Wallet Address</label>
-              <input type="number" placeholder="Capital" class="input_filed bordered w-100" />
-
-              <div class="tips_box">
-                <p class="sub_title">Please always check your withdrawal waller
-                  address before making your transactions.</p>
-              </div>
-
-              <div class="d-flex align-items-center mt-4">
-                <button class="boost_btn grey w-50 cancel-btnWithdraw">Back</button>
-                <button class="boost_btn white w-50 next-btnWithdraw">Next</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 withdrawBoxes py-5" id="withdraw3" style="display: none;">
-            <h5 class="conform_small white">Are you sure</h5>
-            <h6 class="conform_text">Do you want to procced</h6>
-
             <div class="d-flex align-items-center mt-4">
               <button class="boost_btn grey w-50 cancel-btnWithdraw">Back</button>
               <button class="boost_btn white w-50 next-btnWithdraw">Next</button>
             </div>
           </div>
-
-          <div class="mt-4 withdrawBoxes" id="withdraw4" style="display: none;">
-            <p class="sub_title text-center e">Withdraw in progress</p>
-            <h3 class="title_big text-center white">350 USDT</h3>
-
-            <div class="address_code">
-              <!-- Summary -->
-              <p class="sub_title mt-3">Wallet Details</p>
-              <ul class="summary_list">
-                <li>
-                  <p>Currency:</p>
-                  <span class="white">Tether</span>
-                </li>
-                <li>
-                  <p>Address:</p>
-                  <span class="white">TEjrPLnSKWvvbwaSusMEEVgUCS3AM1YXHt</span>
-                </li>
-                <li>
-                  <p>Network:</p>
-                  <span class="white">Tron (TRC20)</span>
-                </li>
-              </ul>
-
-              <hr>
-              <!-- Summary -->
-              <p class="sub_title mt-3">Summary Details</p>
-              <ul class="summary_list">
-                <li>
-                  <p>Date:</p>
-                  <span class="white">October 4, 2023 at 6:28 AM</span>
-                </li>
-                <li>
-                  <p>Transition type:</p>
-                  <span class="white">Withdraw</span>
-                </li>
-              </ul>
-              <div class="grid-container mt-4">
-                <button class="boost_btn white w-100">Return to funds</button>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </div>
-
-    <!-- ========= Other Link ======== -->
-    <div class=" other_link mt-4 d-none">
-      <p class="sub_title py-3">SUPPORT</p>
-      <ul class="crypto_deposit">
-        <li>
-          <a href="#" class="changeDiv">
-            <div class="symbol_icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.4" d="M11 19.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path opacity="0.4" d="M11 12.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path opacity="0.4" d="M11 5.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M3 5.5L4 6.5L7 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M3 12.5L4 13.5L7 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M3 19.5L4 20.5L7 17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div class="symbol_name">
-              <p>FAQ</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="">
-            <div class="symbol_icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.46005 18.4898V15.5698C5.46005 14.5998 6.22005 13.7298 7.30005 13.7298C8.27005 13.7298 9.14005 14.4898 9.14005 15.5698V18.3798C9.14005 20.3298 7.52005 21.9498 5.57005 21.9498C3.62005 21.9498 2.00005 20.3198 2.00005 18.3798V12.2198C1.89005 6.5998 6.33005 2.0498 11.95 2.0498C17.57 2.0498 22 6.5998 22 12.1098V18.2698C22 20.2198 20.38 21.8398 18.43 21.8398C16.48 21.8398 14.86 20.2198 14.86 18.2698V15.4598C14.86 14.4898 15.62 13.6198 16.7 13.6198C17.67 13.6198 18.54 14.3798 18.54 15.4598V18.4898" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
-              </svg>
-            </div>
-            <div class="symbol_name">
-              <p>Live Support</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="help_centers">
-            <div class="symbol_icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <g opacity="0.4">
-                  <path d="M12 16C14.21 16 16 14.21 16 12C16 9.79 14.21 8 12 8C9.79 8 8 9.79 8 12C8 14.21 9.79 16 12 16Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M21.17 7.99988C18.15 7.33988 15.02 7.33988 12 7.99988" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M3.94922 6.05957L3.96922 6.11957C4.97922 9.00957 6.52922 11.6896 8.53922 13.9996" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M10.8809 21.94C12.9409 19.67 14.4909 16.99 15.4309 14.08L15.4609 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </g>
-              </svg>
-            </div>
-            <div class="symbol_name">
-              <p>Help Centre</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="send_emails">
-            <div class="symbol_icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.2 21.3702C12.54 22.2502 11.46 22.2502 10.8 21.3702L9.29999 19.3702C9.12999 19.1502 8.77 18.9702 8.5 18.9702H8C4 18.9702 2 17.9702 2 12.9702V7.97021C2 3.97021 4 1.97021 8 1.97021H16C20 1.97021 22 3.97021 22 7.97021V12.9702" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <g opacity="0.4">
-                  <path d="M18.2 21.4C19.9673 21.4 21.4 19.9673 21.4 18.2C21.4 16.4327 19.9673 15 18.2 15C16.4327 15 15 16.4327 15 18.2C15 19.9673 16.4327 21.4 18.2 21.4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M22 22L21 21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </g>
-                <path d="M15.9965 11H16.0054" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M11.9945 11H12.0035" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M7.99451 11H8.00349" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div class="symbol_name">
-              <p>Send us email</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Active balance -->
-    <div class="modal fade" id="activeBalance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal_header">
-            <h5>Active Balance</h5>
-            <button class="modal_close" data-bs-dismiss="modal">
-              <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path>
-              </svg>
-            </button>
+        <div class="mt-4 withdrawBoxes py-5" id="withdraw3" style="display: none;">
+          <h5 class="conform_small white">Are you sure</h5>
+          <h6 class="conform_text">Do you want to procced</h6>
+          <div class="d-flex align-items-center mt-4">
+            <button class="boost_btn grey w-50 cancel-btnWithdraw">Back</button>
+            <button class="boost_btn white w-50 next-btnWithdraw">Next</button>
           </div>
-          <div class="modal_body">
-
-            <div id="addSymbol1" class="addSymbol">
-              <span class="f-secondary fw-500" style="font-size: 14px">Choose your preferred currency</span>
-              <label for="symbol1" class="symbol_list">
-                <div class="drawer_select_item">
-                  <div class="select_symbol">
-                    <img src="./images/avax.svg" class="symbol" />
-                    <div class="symbol_name">
-                      <p>Avax</p>
-                      <span>USDT</span>
-                    </div>
-                  </div>
-
-                  <div class="symbol_price">
-                    <input class="form-check-input" checked type="radio" name="symbols" id="symbol1">
-                  </div>
-                </div>
-              </label>
-              <label for="symbol2" class="symbol_list">
-                <div class="drawer_select_item">
-                  <div class="select_symbol">
-                    <img src="./images/bnb.svg" class="symbol" />
-                    <div class="symbol_name">
-                      <p>BNB</p>
-                      <span>USDT</span>
-                    </div>
-                  </div>
-
-                  <div class="symbol_price">
-                    <input class="form-check-input" type="radio" name="symbols" id="symbol2">
-                  </div>
-                </div>
-              </label>
-              <label for="symbol3" class="symbol_list">
-                <div class="drawer_select_item">
-                  <div class="select_symbol">
-                    <img src="./images/btc.svg" class="symbol" />
-                    <div class="symbol_name">
-                      <p>BTC</p>
-                      <span>USDT</span>
-                    </div>
-                  </div>
-
-                  <div class="symbol_price">
-                    <input class="form-check-input" type="radio" name="symbols" id="symbol3">
-                  </div>
-                </div>
-              </label>
-
-              <div class="d-flex align-content-center justify-content-center mt-4">
-                <button class="boost_btn oulined_primary w-50" data-bs-dismiss="modal">Cancel</button>
-                <button class="boost_btn primary w-50 next-btnAddsymbol">Next</button>
-              </div>
-            </div>
-
-            <div id="addSymbol2" class="addSymbol" style="display: none;">
-              <h5 class="conform_small ">Are you sure</h5>
-              <h6 class="conform_text">Do you want to procced</h6>
-
-              <div class="d-flex align-content-center justify-content-center mt-4">
-                <button class="boost_btn primary w-100">Save</button>
-              </div>
+        </div>
+        <div class="mt-4 withdrawBoxes" id="withdraw4" style="display: none;">
+          <p class="sub_title text-center e">Withdraw in progress</p>
+          <h3 class="title_big text-center white">350 USDT</h3>
+          <div class="address_code">
+            <!-- Summary -->
+            <p class="sub_title mt-3">Wallet Details</p>
+            <ul class="summary_list">
+              <li>
+                <p>Currency:</p>
+                <span class="white">Tether</span>
+              </li>
+              <li>
+                <p>Address:</p>
+                <span class="white">TEjrPLnSKWvvbwaSusMEEVgUCS3AM1YXHt</span>
+              </li>
+              <li>
+                <p>Network:</p>
+                <span class="white">Tron (TRC20)</span>
+              </li>
+            </ul>
+            <hr>
+            <!-- Summary -->
+            <p class="sub_title mt-3">Summary Details</p>
+            <ul class="summary_list">
+              <li>
+                <p>Date:</p>
+                <span class="white">October 4, 2023 at 6:28 AM</span>
+              </li>
+              <li>
+                <p>Transition type:</p>
+                <span class="white">Withdraw</span>
+              </li>
+            </ul>
+            <div class="grid-container mt-4">
+              <button class="boost_btn white w-100">Return to funds</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- ========= Other Link ======== -->
+  <div class=" other_link mt-4 d-none">
+    <p class="sub_title py-3">SUPPORT</p>
+    <ul class="crypto_deposit">
+      <li>
+        <a href="#" class="changeDiv">
+          <div class="symbol_icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4" d="M11 19.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path opacity="0.4" d="M11 12.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path opacity="0.4" d="M11 5.5H21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M3 5.5L4 6.5L7 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M3 12.5L4 13.5L7 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M3 19.5L4 20.5L7 17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div class="symbol_name">
+            <p>FAQ</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+          <div class="symbol_icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.46005 18.4898V15.5698C5.46005 14.5998 6.22005 13.7298 7.30005 13.7298C8.27005 13.7298 9.14005 14.4898 9.14005 15.5698V18.3798C9.14005 20.3298 7.52005 21.9498 5.57005 21.9498C3.62005 21.9498 2.00005 20.3198 2.00005 18.3798V12.2198C1.89005 6.5998 6.33005 2.0498 11.95 2.0498C17.57 2.0498 22 6.5998 22 12.1098V18.2698C22 20.2198 20.38 21.8398 18.43 21.8398C16.48 21.8398 14.86 20.2198 14.86 18.2698V15.4598C14.86 14.4898 15.62 13.6198 16.7 13.6198C17.67 13.6198 18.54 14.3798 18.54 15.4598V18.4898" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+            </svg>
+          </div>
+          <div class="symbol_name">
+            <p>Live Support</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="help_centers">
+          <div class="symbol_icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <g opacity="0.4">
+                <path d="M12 16C14.21 16 16 14.21 16 12C16 9.79 14.21 8 12 8C9.79 8 8 9.79 8 12C8 14.21 9.79 16 12 16Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M21.17 7.99988C18.15 7.33988 15.02 7.33988 12 7.99988" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M3.94922 6.05957L3.96922 6.11957C4.97922 9.00957 6.52922 11.6896 8.53922 13.9996" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M10.8809 21.94C12.9409 19.67 14.4909 16.99 15.4309 14.08L15.4609 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </g>
+            </svg>
+          </div>
+          <div class="symbol_name">
+            <p>Help Centre</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="send_emails">
+          <div class="symbol_icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.2 21.3702C12.54 22.2502 11.46 22.2502 10.8 21.3702L9.29999 19.3702C9.12999 19.1502 8.77 18.9702 8.5 18.9702H8C4 18.9702 2 17.9702 2 12.9702V7.97021C2 3.97021 4 1.97021 8 1.97021H16C20 1.97021 22 3.97021 22 7.97021V12.9702" stroke="currentColor" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+              <g opacity="0.4">
+                <path d="M18.2 21.4C19.9673 21.4 21.4 19.9673 21.4 18.2C21.4 16.4327 19.9673 15 18.2 15C16.4327 15 15 16.4327 15 18.2C15 19.9673 16.4327 21.4 18.2 21.4Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M22 22L21 21" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </g>
+              <path d="M15.9965 11H16.0054" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M11.9945 11H12.0035" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M7.99451 11H8.00349" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div class="symbol_name">
+            <p>Send us email</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Active balance -->
+  <div class="modal fade" id="activeBalance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal_header">
+          <h5>Active Balance</h5>
+          <button class="modal_close" data-bs-dismiss="modal">
+            <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M18.3 5.71a.9959.9959 0 0 0-1.41 0L12 10.59 7.11 5.7a.9959.9959 0 0 0-1.41 0c-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="modal_body">
+          <div id="addSymbol1" class="addSymbol">
+            <span class="f-secondary fw-500" style="font-size: 14px">Choose your preferred currency</span>
+            <ul class="nav nav-tabs tabs activebalace_modalTab" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="crypto-tab" data-bs-toggle="tab" data-bs-target="#crypto-tab-pane" type="button" role="tab" aria-controls="crypto-tab-pane" aria-selected="true"> crypto </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="fiat-tab" data-bs-toggle="tab" data-bs-target="#fiat-tab-pane" type="button" role="tab" aria-controls="fiat-tab-pane" aria-selected="false"> Fiat </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active w-100" id="crypto-tab-pane">
+                <div class="symbol_list">
+                  <div class="drawer_select_item">
+                    <div class="select_symbol">
+                      <img src="./images/avax.svg" class="symbol" />
+                      <div class="symbol_name">
+                        <p>Avax</p>
+                        <span>USDT</span>
+                      </div>
+                    </div>
+                    <div class="symbol_price">
+                      <p>12,119.95 USDT</p>
+                      <span>$12,119.95</span>
+                    </div>
+                  </div>
+                  <div class="drawer_select_item">
+                    <div class="select_symbol">
+                      <img src="./images/bnb.svg" class="symbol" />
+                      <div class="symbol_name">
+                        <p>BNB</p>
+                        <span>USDT</span>
+                      </div>
+                    </div>
+                    <div class="symbol_price">
+                      <p>12,119.95 USDT</p>
+                      <span>$12,119.95</span>
+                    </div>
+                  </div>
+                  <div class="drawer_select_item">
+                    <div class="select_symbol">
+                      <img src="./images/btc.svg" class="symbol" />
+                      <div class="symbol_name">
+                        <p>BTC</p>
+                        <span>USDT</span>
+                      </div>
+                    </div>
+                    <div class="symbol_price">
+                      <p>12,119.95 USDT</p>
+                      <span>$12,119.95</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade w-100" id="fiat-tab-pane">
+                <div class="symbol_list">
+                  <div class="drawer_select_item">
+                    <div class="select_symbol">
+                      <img src="./images/avax.svg" class="symbol" />
+                      <div class="symbol_name">
+                        <p>Avax</p>
+                        <span>USDT</span>
+                      </div>
+                    </div>
+                    <div class="symbol_price">
+                      <p>0.00 BRL</p>
+                    </div>
+                  </div>
+                  <div class="drawer_select_item">
+                    <div class="select_symbol">
+                      <img src="./images/bnb.svg" class="symbol" />
+                      <div class="symbol_name">
+                        <p>BNB</p>
+                        <span>USDT</span>
+                      </div>
+                    </div>
+                    <div class="symbol_price">
+                      <p>0.00 BRL</p>
+                    </div>
+                  </div>
+                  <div class="drawer_select_item">
+                    <div class="select_symbol">
+                      <img src="./images/btc.svg" class="symbol" />
+                      <div class="symbol_name">
+                        <p>BTC</p>
+                        <span>USDT</span>
+                      </div>
+                    </div>
+                    <div class="symbol_price">
+                      <p>0.00 BRL</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-content-center justify-content-center mt-4">
+              <button class="boost_btn oulined_primary w-50" data-bs-dismiss="modal">Cancel</button>
+              <button class="boost_btn primary w-50 next-btnAddsymbol">Next</button>
+            </div>
+          </div>
+          <div id="addSymbol2" class="addSymbol" style="display: none;">
+            <h5 class="conform_small ">Are you sure</h5>
+            <h6 class="conform_text">Do you want to procced</h6>
+            <div class="d-flex align-content-center justify-content-center mt-4">
+              <button class="boost_btn primary w-100">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $("#faqsBox").load("./faq.html");
+    $("#helpCenter").load("./helpcenter.html");
+    $("#sendMail").load("./sendmail.html");
 
-    <script>
-      $("#faqsBox").load("./faq.html");
-      $("#helpCenter").load("./helpcenter.html");
-      $("#sendMail").load("./sendmail.html");
+    // For Withdraw 
+    var currentIndex = 1;
+    $(".next-btnWithdraw").on("click", function () {
+      if (currentIndex < 4) {
+        currentIndex++;
+      } else {
+        currentIndex = 1;
+      }
+      $(".withdrawBoxes").hide();
+      $("#withdraw" + currentIndex).show();
+    });
 
-      // For Withdraw 
-      var currentIndex = 1;
-      $(".next-btnWithdraw").on("click", function () {
-        if (currentIndex < 4) {
-          currentIndex++;
-        } else {
-          currentIndex = 1;
-        }
-        $(".withdrawBoxes").hide();
-        $("#withdraw" + currentIndex).show();
-      });
-
-      $(".cancel-btnWithdraw").on("click", function () {
-        if (currentIndex < 4) {
-          currentIndex--;
-        } else {
-          currentIndex = 1;
-        }
-        $(".withdrawBoxes").hide();
-        $("#withdraw" + currentIndex).show();
-      });
+    $(".cancel-btnWithdraw").on("click", function () {
+      if (currentIndex < 4) {
+        currentIndex--;
+      } else {
+        currentIndex = 1;
+      }
+      $(".withdrawBoxes").hide();
+      $("#withdraw" + currentIndex).show();
+    });
 
 
-      $(".next-btnAddsymbol").on("click", function () {
-        if (currentIndex < 2) {
-          currentIndex++;
-        } else {
-          currentIndex = 1;
-        }
-        $(".addSymbol").hide();
-        $("#addSymbol" + currentIndex).show();
-      });
+    $(".next-btnAddsymbol").on("click", function () {
+      if (currentIndex < 2) {
+        currentIndex++;
+      } else {
+        currentIndex = 1;
+      }
+      $(".addSymbol").hide();
+      $("#addSymbol" + currentIndex).show();
+    });
 
-      $(".cancel-btnAddsymbol").on("click", function () {
-        if (currentIndex < 2) {
-          currentIndex--;
-        } else {
-          currentIndex = 1;
-        }
-        $(".addSymbol").hide();
-        $("#addSymbol" + currentIndex).show();
-      });
+    $(".cancel-btnAddsymbol").on("click", function () {
+      if (currentIndex < 2) {
+        currentIndex--;
+      } else {
+        currentIndex = 1;
+      }
+      $(".addSymbol").hide();
+      $("#addSymbol" + currentIndex).show();
+    });
 
 
-      $(".next-deposit").on("click", function () {
-        if (currentIndex < 2) {
-          currentIndex++;
-        } else {
-          currentIndex = 1;
-        }
-        $(".depositBox").hide();
-        $("#deposit" + currentIndex).show();
-      });
+    $(".next-deposit").on("click", function () {
+      if (currentIndex < 2) {
+        currentIndex++;
+      } else {
+        currentIndex = 1;
+      }
+      $(".depositBox").hide();
+      $("#deposit" + currentIndex).show();
+    });
 
-      $(".cancel-deposit").on("click", function () {
-        if (currentIndex < 2) {
-          currentIndex--;
-        } else {
-          currentIndex = 1;
-        }
-        $(".depositBox").hide();
-        $("#deposit" + currentIndex).show();
-      });
-    </script>
-  </body>
+    $(".cancel-deposit").on("click", function () {
+      if (currentIndex < 2) {
+        currentIndex--;
+      } else {
+        currentIndex = 1;
+      }
+      $(".depositBox").hide();
+      $("#deposit" + currentIndex).show();
+    });
+
+
+    $("#handleSymbolBox").click(function () {
+      if ($("#qrCodeBoxhandle").hasClass('open')) {
+        $("#qrCodeBoxhandle").removeClass('open')
+      } else {
+        $("#qrCodeBoxhandle").addClass('open')
+      }
+    })
+  </script>
+</body>
 
 </html>
+<!-- 
+
+
+<div id="deposit1" class="addSymbol depositBox">
+  <span class="f-secondary fw-500" style="font-size: 14px">Choose your preferred currency</span>
+  <div class="symbolBox">
+    <div class="symbol_list next-deposit">
+      <div class="drawer_select_item">
+        <div class="select_symbol">
+          <img src="./images/tusd.svg" class="symbol" />
+          <div class="symbol_name">
+            <p>Tether</p>
+            <span>Deposit Tether</span>
+          </div>
+        </div>
+        <div class="symbol_price">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="symbol_list next-deposit">
+      <div class="drawer_select_item">
+        <div class="select_symbol">
+          <img src="./images/btc.svg" class="symbol" />
+          <div class="symbol_name">
+            <p>Bitcoin</p>
+            <span>Deposit Bitcoin</span>
+          </div>
+        </div>
+        <div class="symbol_price">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="symbol_list next-deposit">
+      <div class="drawer_select_item">
+        <div class="select_symbol">
+          <img src="./images/eth.svg" class="symbol" />
+          <div class="symbol_name">
+            <p>Ethereum</p>
+            <span>Deposit ETH</span>
+          </div>
+        </div>
+        <div class="symbol_price">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="symbol_list next-deposit">
+      <div class="drawer_select_item">
+        <div class="select_symbol">
+          <img src="./images/bnb.svg" class="symbol" />
+          <div class="symbol_name">
+            <p>Ethereum</p>
+            <span>Deposit ETH</span>
+          </div>
+        </div>
+        <div class="symbol_price">
+          <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.46311 6.5L0.18657 1.11088C0.067111 0.988843 0 0.823325 0 0.650738C0 0.478151 0.067111 0.312634 0.18657 0.190596C0.306029 0.0685587 0.46805 0 0.636991 0C0.805931 0 0.967952 0.0685587 1.08741 0.190596L6.8131 6.03986C6.87234 6.10023 6.91935 6.17195 6.95142 6.25091C6.98349 6.32987 7 6.41451 7 6.5C7 6.58549 6.98349 6.67013 6.95142 6.74909C6.91935 6.82805 6.87234 6.89977 6.8131 6.96014L1.08741 12.8094C0.967952 12.9314 0.805931 13 0.636991 13C0.46805 13 0.306029 12.9314 0.18657 12.8094C0.067111 12.6874 0 12.5218 0 12.3493C0 12.1767 0.067111 12.0112 0.18657 11.8891L5.46311 6.5Z" fill="#8994A3" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

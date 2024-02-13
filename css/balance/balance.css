@@ -3,7 +3,6 @@
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
-
 .balanceCard_box .card_box {
   position: relative;
   border-radius: 1.5rem;
@@ -11,7 +10,6 @@
   overflow: hidden;
   padding: 3rem 2.5rem;
 }
-
 .balanceCard_box .card_box svg#visual {
   position: absolute;
   top: 0;
@@ -21,14 +19,12 @@
   z-index: -1;
   display: none;
 }
-
 @media screen and (max-width: 991px) {
   .balanceCard_box .card_box {
     height: auto;
     padding: 2rem;
   }
 }
-
 .balanceCard_box .card_simple {
   background-color: var(--color_white);
   padding: 3rem 2.5rem;
@@ -38,11 +34,9 @@
   height: 100%;
   position: relative;
 }
-
 .balanceCard_box .card_simple svg#visual {
   display: none;
 }
-
 .balanceCard_box .card_simple .icons {
   position: absolute;
   top: 55%;
@@ -51,38 +45,27 @@
   z-index: 1;
   display: none;
 }
-
 @media screen and (max-width: 991px) {
   .balanceCard_box .card_simple .icons {
     top: 40%;
   }
 }
-
 @media screen and (max-width: 575px) {
   .balanceCard_box .card_simple .icons {
     top: 50%;
   }
 }
-
 @media screen and (max-width: 991px) {
   .balanceCard_box .card_simple {
     height: auto;
     padding: 2rem;
   }
 }
-
 .balanceCard_box .page_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  align-items: center;
+  justify-content: left;
 }
-
 .balanceCard_box .page_title button.page_icon {
   height: 2.8rem;
   width: 2.8rem;
@@ -91,39 +74,28 @@
   border-radius: 50%;
   background-color: var(--color_lightprimary);
   color: var(--color_primary);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .balanceCard_box .page_title button.page_icon svg {
   height: 1.8rem;
   width: 1.8rem;
   color: var(--color_primary);
 }
-
 .balanceCard_box .page_title span {
   font-size: 2rem;
   color: var(--color_dark);
   font-weight: 800;
 }
-
 .balanceCard_box .page_title span.dark {
   color: var(--color_dark);
 }
-
 @media screen and (max-width: 991px) {
   .balanceCard_box .page_title span {
     font-size: 1.6rem;
   }
 }
-
 .balanceCard_box .dropdown_btn {
   width: 3rem;
   height: 3rem;
@@ -131,23 +103,15 @@
   background-color: var(--color_lightprimary);
   color: var(--color_primary);
   padding: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 @media screen and (max-width: 991px) {
   .balanceCard_box .dropdown_btn {
     display: none;
   }
 }
-
 .balanceCard_box button.btn_action_boost {
   padding: 0.8rem 2rem;
   width: 100%;
@@ -158,68 +122,56 @@
   text-transform: capitalize;
   margin-top: 0.6rem;
 }
-
 .balanceCard_box button.btn_action_boost svg {
   height: 1.8rem;
   width: 1.8rem;
   margin-right: 1rem;
 }
-
 .balanceCard_box h4.amount {
   font-size: 2.4rem;
   font-weight: 600;
   color: var(--color_primary);
   margin-top: 2rem;
 }
-
 .balanceCard_box h4.amount span {
   color: var(--color_primary);
   font-weight: 700;
 }
-
 .balanceCard_box h4.amount span:first-child {
   font-size: 4rem;
 }
-
 @media screen and (max-width: 91px) {
   .balanceCard_box h4.amount span:first-child {
     font-size: 3rem;
   }
 }
-
 .balanceCard_box h4.amount span:last-child {
   font-size: 2.8rem;
 }
-
 @media screen and (max-width: 91px) {
   .balanceCard_box h4.amount span:last-child {
     font-size: 2.2rem;
   }
 }
-
 .balanceCard_box h4.amount.filled {
   background-color: #E6F5E9;
   padding: 0.8rem 2rem;
   border-radius: 0.6rem;
-  color: green;
+  color: rgb(0, 128, 0);
 }
-
 .balanceCard_box h4.amount.dark {
   color: var(--color_dark);
 }
-
 @media screen and (max-width: 991px) {
   .balanceCard_box h4.amount {
     font-size: 2rem;
   }
 }
-
 @media screen and (max-width: 575px) {
   .balanceCard_box h4.amount {
     margin-top: 1rem;
   }
 }
-
 .balanceCard_box p.amount_small {
   font-size: 1.6rem;
   font-weight: 400;
@@ -227,36 +179,30 @@
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
-
 .balanceCard_box p.amount_small.dark {
   color: var(--color_secondary);
 }
-
 @media screen and (max-width: 991px) {
   .balanceCard_box p.amount_small {
     font-size: 1.8rem;
   }
 }
-
 @media screen and (max-width: 575px) {
   .balanceCard_box p.amount_small {
     font-size: 1.3rem;
     margin-top: 0;
   }
 }
-
 .balanceCard_box .logo_mob {
   max-height: 4rem;
   max-height: 4rem;
   height: 100%;
   width: 100%;
 }
-
 .balanceCard_box .logo_mob img {
   max-width: 100%;
   max-height: 100%;
 }
-
 @media screen and (max-width: 767px) {
   .balanceCard_box {
     padding: 1rem;
@@ -266,16 +212,13 @@
 .user_menu_action {
   max-width: 22rem;
 }
-
 .user_menu_action .MuiList-root {
   padding: 0;
 }
-
 .user_menu_action .MuiList-root .MuiButtonBase-root {
   padding: 0.5rem;
   margin-top: 0.5rem !important;
 }
-
 @media screen and (max-width: 991px) {
   .user_menu_action {
     max-width: 100%;
@@ -288,7 +231,6 @@
   z-index: 50;
   padding: 1.5rem;
   border-radius: 1.5rem 1.5rem 0 0;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
@@ -296,67 +238,47 @@
   width: 100%;
   background-color: var(--color_white);
   padding: 3rem 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 1rem;
   border: 1px solid var(--border_color);
 }
-
 .earning_item .earning_content {
   width: calc(100% - 6rem);
   display: block;
 }
-
 .earning_item .earning_content p {
   font-size: 1.3rem;
   color: var(--color_dark);
 }
-
 .earning_item .earning_content h5 {
   font-size: 2.2rem;
   color: var(--color_primary);
   font-weight: 600;
   margin-top: 0.6rem;
 }
-
 @media screen and (max-width: 767px) {
   .earning_item .earning_content h5 {
     font-size: 1.6rem;
   }
 }
-
 .earning_item .earning_icon {
   height: 5.5rem;
   width: 5.5rem;
   border-radius: 50%;
   background: var(--color_primary);
   padding: 1.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0 5px 10px rgba(98, 89, 202, 0.3);
-          box-shadow: 0 5px 10px rgba(98, 89, 202, 0.3);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(98, 89, 202, 0.3);
   color: var(--color_white);
 }
-
 .earning_item .earning_icon svg {
   height: 100%;
   width: 100%;
 }
-
 @media screen and (max-width: 991px) {
   .earning_item .earning_icon {
     height: 3.4rem;
@@ -364,7 +286,6 @@
     padding: 0.6rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .earning_item {
     width: 100%;
@@ -373,33 +294,24 @@
 }
 
 .form-check {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: 1rem;
   margin-top: 3rem;
 }
-
 .form-check input.form-check-input {
   height: 2 rem;
   width: 2 rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   color: var(--color_primary);
   border: 1px solid var(--color_secondary);
 }
-
 .form-check input.form-check-input:checked {
   background-color: var(--color_primary);
   border-color: var(--color_primary);
 }
-
 .form-check .form-check-label {
   font-size: 1.3rem;
   color: var(--color_dark);
   padding-left: 1rem;
-}
-/*# sourceMappingURL=balance.css.map */
+}/*# sourceMappingURL=balance.css.map */
